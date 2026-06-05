@@ -1,0 +1,1412 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Janis Rusko | Chemical Risk Assessment and Evidence Systems</title>
+    <meta
+      name="description"
+      content="Janis Rusko: chemical risk assessment, food safety, dietary exposure, risk prioritisation, evidence systems, and analytical chemistry foundations."
+    >
+    <script>
+      (function () {
+        var savedTheme = localStorage.getItem("theme");
+        var prefersLight = window.matchMedia("(prefers-color-scheme: light)").matches;
+        var theme = savedTheme || (prefersLight ? "light" : "dark");
+        document.documentElement.dataset.theme = theme;
+      })();
+    </script>
+    <style>
+:root {
+  color-scheme: dark;
+}
+
+:root[data-theme="light"] {
+  color-scheme: light;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  letter-spacing: 0;
+}
+
+a {
+  color: inherit;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+
+img {
+  max-width: 100%;
+}
+
+.placeholder-block,
+.placeholder-line,
+.a-index i,
+.c-list i {
+  display: block;
+  background:
+    linear-gradient(90deg, rgba(255, 255, 255, 0.18), rgba(255, 255, 255, 0) 34%),
+    currentColor;
+  opacity: 0.18;
+}
+
+.placeholder-block {
+  min-height: 8.5rem;
+  border-radius: 4px;
+}
+
+.placeholder-block.large {
+  min-height: 13.5rem;
+}
+
+.placeholder-stack {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.placeholder-line {
+  width: 100%;
+  height: 1rem;
+  border-radius: 999px;
+}
+
+.placeholder-line.short {
+  width: 64%;
+}
+
+.chooser-page {
+  min-height: 100vh;
+  background: #f4f1ea;
+  color: #202124;
+}
+
+.chooser {
+  width: min(1080px, calc(100% - 2rem));
+  margin: 0 auto;
+  padding: clamp(4rem, 10vw, 8rem) 0;
+}
+
+.chooser-kicker,
+.meta-line {
+  color: #8a3d32;
+  font-size: 0.76rem;
+  font-weight: 760;
+  text-transform: uppercase;
+}
+
+.chooser h1 {
+  max-width: 11ch;
+  margin-top: 0.6rem;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(3rem, 8vw, 7.5rem);
+  line-height: 0.92;
+}
+
+.chooser > p:not(.chooser-kicker) {
+  max-width: 42rem;
+  margin-top: 1.25rem;
+  color: #5f625e;
+  font-size: 1.1rem;
+}
+
+.direction-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 3rem;
+}
+
+.direction {
+  min-height: 18rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 0.4rem;
+  padding: 1rem;
+  border: 1px solid #d6d1c5;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.direction span {
+  color: #8a3d32;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.85rem;
+}
+
+.direction strong {
+  font-size: 1.35rem;
+}
+
+.direction em {
+  color: #66655f;
+  font-style: normal;
+}
+
+.direction-a {
+  background: #fbfaf6;
+}
+
+.direction-b {
+  background: #121918;
+  color: #dde6df;
+  border-color: #2b3934;
+}
+
+.direction-b em {
+  color: #9cab9e;
+}
+
+.direction-c {
+  background: #eef0ed;
+}
+
+/* Version A: Archive Desk */
+.theme-a {
+  background: #f6f0e4;
+  color: #25231f;
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem clamp(1.25rem, 4vw, 3rem);
+  border-bottom: 1px solid rgba(76, 69, 58, 0.2);
+  background: rgba(246, 240, 228, 0.9);
+  backdrop-filter: blur(14px);
+}
+
+.brand,
+.site-header nav a {
+  text-decoration: none;
+}
+
+.site-header nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  color: #6a6255;
+}
+
+.a-hero,
+.a-section {
+  width: min(1180px, calc(100% - 2.5rem));
+  margin: 0 auto;
+}
+
+.a-hero {
+  min-height: calc(100vh - 64px);
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(16rem, 0.72fr);
+  align-items: end;
+  gap: clamp(1.5rem, 4vw, 4rem);
+  padding: clamp(3rem, 7vw, 6rem) 0 2rem;
+}
+
+.a-title h1 {
+  margin-top: 0.55rem;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(4rem, 11vw, 10.5rem);
+  line-height: 0.82;
+  letter-spacing: 0;
+}
+
+.a-hero figure,
+.a-visual-block {
+  margin: 0;
+  border: 1px solid rgba(76, 69, 58, 0.22);
+  background: #fffaf0;
+}
+
+.a-visual-block {
+  min-height: 36rem;
+  display: grid;
+  align-content: end;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.a-visual-block span {
+  display: block;
+  height: 4rem;
+  background: #4e473b;
+  opacity: 0.12;
+}
+
+.a-hero img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1 / 1.15;
+  object-fit: cover;
+  filter: saturate(0.82) contrast(0.95);
+}
+
+.a-intro {
+  grid-column: 1 / -1;
+  color: #4e473b;
+}
+
+.a-section {
+  padding: clamp(3.5rem, 8vw, 7rem) 0;
+  border-top: 1px solid rgba(76, 69, 58, 0.25);
+}
+
+.two-col {
+  display: grid;
+  grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+  gap: clamp(2rem, 6vw, 5rem);
+}
+
+.a-section h2 {
+  margin-top: 0.5rem;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(2.2rem, 5vw, 4.7rem);
+  line-height: 0.94;
+}
+
+.a-ledger {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  border-top: 1px solid rgba(76, 69, 58, 0.25);
+  border-left: 1px solid rgba(76, 69, 58, 0.25);
+}
+
+.a-ledger article {
+  min-height: 19rem;
+  padding: 1rem;
+  border-right: 1px solid rgba(76, 69, 58, 0.25);
+  border-bottom: 1px solid rgba(76, 69, 58, 0.25);
+}
+
+.a-ledger span {
+  color: #8a3d32;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
+.a-ledger h3,
+.a-rows span,
+.a-index span {
+  margin: 1.4rem 0 1rem;
+  font-size: 1.15rem;
+}
+
+.a-index {
+  display: grid;
+  gap: 1rem;
+}
+
+.a-index div {
+  display: grid;
+  grid-template-columns: minmax(8rem, 0.35fr) minmax(0, 1fr);
+  gap: 1rem;
+  align-items: center;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(76, 69, 58, 0.25);
+}
+
+.a-index i {
+  height: 3.3rem;
+  color: #4e473b;
+  border-radius: 4px;
+}
+
+.a-rows {
+  border-top: 1px solid rgba(76, 69, 58, 0.25);
+}
+
+.a-rows article {
+  display: grid;
+  grid-template-columns: minmax(10rem, 0.3fr) minmax(0, 1fr);
+  gap: 1rem;
+  padding: 1.2rem 0;
+  border-bottom: 1px solid rgba(76, 69, 58, 0.25);
+}
+
+/* Version B: Systems Console */
+.theme-b {
+  --b-bg: #0f1413;
+  --b-text: #e0e8e2;
+  --b-muted: #aab7af;
+  --b-line: #2a3430;
+  --b-panel: #151c1a;
+  --b-accent: #82b7a7;
+  --b-warm: #d3b36f;
+  --b-soft: #c7d4cc;
+  --b-placeholder: #aebdb2;
+  background: var(--b-bg);
+  color: var(--b-text);
+}
+
+:root[data-theme="light"] .theme-b {
+  --b-bg: #f6f7f3;
+  --b-text: #17201d;
+  --b-muted: #5d6964;
+  --b-line: #d7ded8;
+  --b-panel: #ffffff;
+  --b-accent: #26705d;
+  --b-warm: #9a6a1f;
+  --b-soft: #26352f;
+  --b-placeholder: #4f5f58;
+}
+
+.b-shell {
+  width: min(1060px, calc(100% - 2rem));
+  margin: 0 auto;
+}
+
+header.b-shell {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.85rem 0;
+  border-bottom: 1px solid var(--b-line);
+  background: color-mix(in srgb, var(--b-bg) 86%, transparent);
+  color: var(--b-muted);
+  backdrop-filter: blur(16px);
+}
+
+header.b-shell a {
+  text-decoration: none;
+}
+
+header.b-shell > a {
+  min-height: 2.15rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: var(--b-text);
+  font-weight: 620;
+}
+
+.theme-b nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem;
+  justify-content: flex-start;
+}
+
+.theme-b nav a {
+  text-decoration: none;
+}
+
+.theme-b nav a:hover,
+header.b-shell > a:hover {
+  color: var(--b-accent);
+}
+
+.theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  min-height: 2.15rem;
+  padding: 0.25rem 0;
+  border: 0;
+  background: transparent;
+  color: var(--b-muted);
+  cursor: pointer;
+  font: inherit;
+}
+
+.theme-toggle:hover {
+  color: var(--b-text);
+}
+
+.toggle-track {
+  width: 2.8rem;
+  height: 1.45rem;
+  display: inline-flex;
+  align-items: center;
+  padding: 0.18rem;
+  border: 1px solid var(--b-line);
+  border-radius: 999px;
+  background: var(--b-panel);
+}
+
+.toggle-track span {
+  width: 0.95rem;
+  height: 0.95rem;
+  border-radius: 50%;
+  background: var(--b-accent);
+  transform: translateX(0);
+  transition: transform 160ms ease;
+}
+
+:root[data-theme="light"] .toggle-track span {
+  transform: translateX(1.28rem);
+}
+
+.toggle-label {
+  min-width: 2.2rem;
+  color: var(--b-accent);
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.82rem;
+  text-transform: uppercase;
+}
+
+.b-hero {
+  display: grid;
+  grid-template-columns: minmax(15rem, 0.34fr) minmax(0, 1fr);
+  align-items: start;
+  gap: clamp(2rem, 6vw, 5rem);
+  padding: clamp(2.6rem, 6vw, 4rem) 0 clamp(3rem, 7vw, 5rem);
+  scroll-margin-top: 5rem;
+}
+
+.b-status {
+  margin-bottom: 0.9rem;
+  color: var(--b-accent);
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.86rem;
+  text-transform: uppercase;
+}
+
+.b-hero h1 {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: clamp(3rem, 6.8vw, 5.7rem);
+  font-weight: 500;
+  line-height: 0.94;
+  text-transform: uppercase;
+}
+
+.b-hero-note {
+  max-width: 48rem;
+  margin-top: 1.2rem;
+  color: var(--b-muted);
+  font-size: clamp(1rem, 1.6vw, 1.25rem);
+  line-height: 1.45;
+}
+
+.profile-card {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding: 1rem 0;
+  border-top: 1px solid var(--b-line);
+  border-bottom: 1px solid var(--b-line);
+}
+
+.profile-kicker {
+  color: var(--b-accent);
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.82rem;
+  text-transform: uppercase;
+}
+
+.profile-card dl {
+  display: grid;
+  gap: 1rem;
+  margin: 0;
+}
+
+.profile-card dl > div {
+  display: grid;
+  gap: 0.25rem;
+}
+
+.profile-card dt {
+  color: var(--b-muted);
+  font-size: 0.78rem;
+  text-transform: uppercase;
+}
+
+.profile-card dd {
+  margin: 0;
+  color: var(--b-text);
+  line-height: 1.35;
+}
+
+.profile-card dd a,
+.b-timeline p a {
+  color: var(--b-text);
+  text-decoration-color: color-mix(in srgb, var(--b-accent) 42%, transparent);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.2em;
+}
+
+.profile-card dd a:hover,
+.b-timeline p a:hover {
+  color: var(--b-accent);
+}
+
+.b-panel-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1px;
+  background: var(--b-line);
+  border: 1px solid var(--b-line);
+}
+
+.b-panel-grid article {
+  min-height: 11rem;
+  padding: 1rem;
+  background: var(--b-panel);
+}
+
+.b-panel-grid p,
+.b-timeline p,
+.profile-grid p {
+  color: var(--b-muted);
+  line-height: 1.55;
+}
+
+.profile-grid a,
+.selected-work-main a,
+.earlier-foundations a {
+  color: var(--b-text);
+  text-decoration-color: color-mix(in srgb, var(--b-accent) 42%, transparent);
+  text-underline-offset: 0.18em;
+}
+
+.profile-grid a:hover,
+.selected-work-main a:hover,
+.earlier-foundations a:hover {
+  color: var(--b-accent);
+}
+
+.b-section-title span,
+.section-eyebrow,
+.work-category,
+.workstream-head span,
+.selected-work-main span,
+.direction-path span,
+.b-timeline span {
+  color: var(--b-accent);
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
+.b-section {
+  padding: clamp(3rem, 7vw, 6rem) 0;
+  border-top: 1px solid var(--b-line);
+  scroll-margin-top: 5rem;
+}
+
+.b-section-title {
+  display: grid;
+  grid-template-columns: 4rem minmax(0, 1fr);
+  align-items: baseline;
+  margin-bottom: 1.2rem;
+}
+
+.b-section h2 {
+  font-size: clamp(1.7rem, 4vw, 3.2rem);
+  font-weight: 560;
+  line-height: 1;
+}
+
+.section-eyebrow {
+  margin-bottom: 0.35rem;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+
+.section-intro {
+  max-width: 52rem;
+  margin: 0 0 1.4rem 4rem;
+  color: var(--b-muted);
+  font-size: clamp(1rem, 1.4vw, 1.16rem);
+  line-height: 1.55;
+}
+
+.workstream-list {
+  display: grid;
+  gap: 0;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid var(--b-line);
+  list-style: none;
+  counter-reset: workstream;
+}
+
+.workstream-list li {
+  display: grid;
+  grid-template-columns: 4rem minmax(0, 1fr);
+  gap: 1rem;
+  padding: 1.1rem 0;
+  border-bottom: 1px solid var(--b-line);
+  counter-increment: workstream;
+}
+
+.workstream-list li::before {
+  color: var(--b-warm);
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  content: counter(workstream, decimal-leading-zero);
+}
+
+.workstream-head {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 0.75rem;
+  align-items: baseline;
+  margin-bottom: 0.35rem;
+}
+
+.workstream-head span {
+  font-size: 0.74rem;
+  text-transform: uppercase;
+}
+
+.workstream-list p {
+  grid-column: 2;
+  max-width: 54rem;
+  color: var(--b-muted);
+  line-height: 1.55;
+}
+
+.question-list {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1px;
+  margin: 0;
+  padding: 0;
+  border: 1px solid var(--b-line);
+  background: var(--b-line);
+  list-style: none;
+  counter-reset: question;
+}
+
+.question-list li {
+  min-height: 14rem;
+  display: grid;
+  align-content: start;
+  gap: 0.75rem;
+  padding: 1rem;
+  background: var(--b-panel);
+  counter-increment: question;
+}
+
+.question-list li::before {
+  color: var(--b-warm);
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  content: counter(question, decimal-leading-zero);
+}
+
+.question-list p {
+  color: var(--b-muted);
+  line-height: 1.55;
+}
+
+.subsection-heading {
+  margin: clamp(2rem, 5vw, 3.2rem) 0 1rem;
+  font-size: clamp(1.15rem, 2vw, 1.45rem);
+  font-weight: 560;
+}
+
+.b-timeline {
+  border-top: 1px solid var(--b-line);
+}
+
+.b-timeline article {
+  display: grid;
+  grid-template-columns: 3rem minmax(10rem, 0.3fr) minmax(0, 1fr);
+  gap: 1rem;
+  padding: 1.25rem 0;
+  border-bottom: 1px solid var(--b-line);
+}
+
+.b-timeline span {
+  width: 0.55rem;
+  height: 0.55rem;
+  margin-top: 0.45rem;
+  border-radius: 50%;
+  background: var(--b-accent);
+}
+
+.direction-path {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1px;
+  border: 1px solid var(--b-line);
+  background: var(--b-line);
+}
+
+.direction-path article {
+  min-height: 7.5rem;
+  display: grid;
+  align-content: start;
+  gap: 0.8rem;
+  padding: 1rem;
+  background: var(--b-panel);
+}
+
+.direction-path p {
+  color: var(--b-muted);
+  line-height: 1.55;
+}
+
+.selected-work-list {
+  display: grid;
+  border-top: 1px solid var(--b-line);
+}
+
+.selected-work-list article {
+  display: grid;
+  grid-template-columns: minmax(11rem, 0.28fr) minmax(0, 1fr);
+  gap: 1rem;
+  padding: 1.1rem 0;
+  border-bottom: 1px solid var(--b-line);
+}
+
+.work-category {
+  font-size: 0.78rem;
+  line-height: 1.35;
+  text-transform: uppercase;
+}
+
+.selected-work-main {
+  display: grid;
+  gap: 0.45rem;
+}
+
+.selected-work-main span {
+  font-size: 0.78rem;
+}
+
+.selected-work-main p {
+  max-width: 54rem;
+  color: var(--b-muted);
+  line-height: 1.55;
+}
+
+.selected-work-main a {
+  width: fit-content;
+}
+
+.earlier-foundations {
+  margin-top: clamp(2rem, 5vw, 3.2rem);
+}
+
+.earlier-foundations details {
+  border-top: 1px solid var(--b-line);
+}
+
+.earlier-foundations details:last-child {
+  border-bottom: 1px solid var(--b-line);
+}
+
+.earlier-foundations summary {
+  display: grid;
+  grid-template-columns: 1.2rem minmax(0, 1fr) auto;
+  gap: 1rem;
+  align-items: baseline;
+  padding: 1rem 0;
+  color: var(--b-text);
+  cursor: pointer;
+  list-style: none;
+}
+
+.earlier-foundations summary::-webkit-details-marker {
+  display: none;
+}
+
+.earlier-foundations summary::before {
+  color: var(--b-warm);
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  content: "+";
+}
+
+.earlier-foundations details[open] summary::before {
+  content: "-";
+}
+
+.earlier-foundations summary span:first-child {
+  grid-column: 2;
+  font-weight: 620;
+}
+
+.earlier-foundations summary span:last-child {
+  grid-column: 3;
+  color: var(--b-accent);
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.78rem;
+}
+
+.earlier-foundations summary:hover,
+.earlier-foundations summary:focus-visible {
+  color: var(--b-accent);
+}
+
+.earlier-foundations summary:focus-visible {
+  outline: 2px solid var(--b-accent);
+  outline-offset: 4px;
+}
+
+.earlier-foundations details p {
+  max-width: 54rem;
+  padding: 0 0 1rem 1.6rem;
+  color: var(--b-muted);
+  line-height: 1.55;
+}
+
+.profile-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1px;
+  border: 1px solid var(--b-line);
+  background: var(--b-line);
+}
+
+.profile-grid article {
+  min-height: 9rem;
+  padding: 1rem;
+  background: var(--b-panel);
+}
+
+.site-footer {
+  padding: 0 0 clamp(2rem, 5vw, 3rem);
+}
+
+.contact-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem;
+  border-top: 1px solid var(--b-line);
+  padding-top: 1rem;
+}
+
+.contact-row a {
+  color: var(--b-accent);
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+.contact-row a:hover {
+  color: var(--b-text);
+}
+
+.theme-b .placeholder-block,
+.theme-b .placeholder-line {
+  color: var(--b-placeholder);
+}
+
+/* Version C: Institutional Minimal */
+.theme-c {
+  background: #e9ece7;
+  color: #222826;
+}
+
+.c-header,
+.c-hero,
+.c-section {
+  width: min(1120px, calc(100% - 2rem));
+  margin: 0 auto;
+}
+
+.c-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.2rem 0;
+  border-bottom: 2px solid #222826;
+}
+
+.c-header a {
+  font-weight: 680;
+  text-decoration: none;
+}
+
+.c-header nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  color: #555f5a;
+}
+
+.c-hero {
+  min-height: calc(100vh - 70px);
+  display: grid;
+  grid-template-columns: minmax(10rem, 0.28fr) minmax(0, 1fr);
+  gap: clamp(2rem, 7vw, 7rem);
+  align-items: center;
+  padding: 4rem 0;
+}
+
+.c-hero aside {
+  display: grid;
+  align-content: start;
+  gap: 0.7rem;
+  min-height: 22rem;
+  padding-top: 0.25rem;
+  border-top: 2px solid #222826;
+  color: #555f5a;
+}
+
+.c-hero aside p {
+  margin-bottom: 1rem;
+  color: #222826;
+  font-weight: 760;
+}
+
+.c-hero aside span {
+  font-size: 0.95rem;
+}
+
+.c-hero h1 {
+  font-size: clamp(4.2rem, 14vw, 12rem);
+  font-weight: 760;
+  line-height: 0.82;
+  text-transform: uppercase;
+}
+
+.c-rule {
+  height: 2px;
+  margin: 2rem 0;
+  background: #222826;
+}
+
+.c-section {
+  display: grid;
+  grid-template-columns: 5rem minmax(0, 0.45fr) minmax(0, 1fr);
+  gap: 1.2rem;
+  padding: clamp(3.5rem, 8vw, 7rem) 0;
+  border-top: 1px solid rgba(34, 40, 38, 0.28);
+}
+
+.c-number {
+  color: #9d432f;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
+.c-section h2 {
+  font-size: clamp(1.6rem, 3vw, 2.4rem);
+}
+
+.c-cards {
+  display: grid;
+  gap: 0.8rem;
+}
+
+.c-cards article {
+  display: grid;
+  grid-template-columns: minmax(8rem, 0.32fr) minmax(0, 1fr);
+  gap: 1rem;
+  align-items: start;
+  padding-bottom: 0.8rem;
+  border-bottom: 1px solid rgba(34, 40, 38, 0.22);
+}
+
+.c-wide {
+  display: grid;
+  gap: 1rem;
+}
+
+.c-labels {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.c-labels span {
+  padding: 0.35rem 0.55rem;
+  border: 1px solid rgba(34, 40, 38, 0.35);
+  font-size: 0.9rem;
+}
+
+.c-list {
+  display: grid;
+  gap: 0.85rem;
+}
+
+.c-list article {
+  display: grid;
+  grid-template-columns: minmax(8rem, 0.3fr) minmax(0, 1fr);
+  gap: 1rem;
+  align-items: center;
+}
+
+.c-list i {
+  height: 3rem;
+  color: #222826;
+}
+
+@media (max-width: 820px) {
+  .direction-grid,
+  .a-hero,
+  .two-col,
+  .a-ledger,
+  .b-hero,
+  .b-panel-grid,
+  .profile-grid,
+  .question-list,
+  .direction-path,
+  .c-hero,
+  .c-section,
+  .c-cards article {
+    grid-template-columns: 1fr;
+  }
+
+  .site-header,
+  .c-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  header.b-shell {
+    display: grid;
+    grid-template-columns: 1fr auto;
+  }
+
+  header.b-shell > a {
+    justify-self: start;
+  }
+
+  header.b-shell nav {
+    grid-column: 1 / -1;
+    order: 2;
+  }
+
+  .theme-toggle {
+    justify-self: end;
+  }
+
+  .a-hero,
+  .b-hero,
+  .c-hero {
+    min-height: auto;
+  }
+
+  .b-hero {
+    padding-top: 2.4rem;
+  }
+
+  .a-hero img {
+    aspect-ratio: 16 / 9;
+  }
+
+  .a-visual-block {
+    min-height: 18rem;
+  }
+
+  .b-section-title,
+  .workstream-list li,
+  .selected-work-list article,
+  .b-timeline article,
+  .a-rows article,
+  .a-index div,
+  .c-list article {
+    grid-template-columns: 1fr;
+  }
+
+  .section-intro {
+    margin-left: 0;
+  }
+
+  .workstream-list p {
+    grid-column: auto;
+  }
+
+  .earlier-foundations summary {
+    grid-template-columns: 1.2rem minmax(0, 1fr);
+    gap: 0.45rem 0.8rem;
+  }
+
+  .earlier-foundations summary span:first-child,
+  .earlier-foundations summary span:last-child {
+    grid-column: 2;
+  }
+
+  .c-hero aside {
+    min-height: auto;
+  }
+}
+
+    </style>
+  </head>
+  <body id="top" class="theme-b">
+    <header class="b-shell">
+      <a class="wordmark" href="#top" aria-label="Janis Rusko home">Janis Rusko</a>
+      <nav aria-label="Primary navigation">
+        <a href="#now">Now</a>
+        <a href="#direction">Direction</a>
+        <a href="#work">Selected work</a>
+        <a href="#credentials">Credentials</a>
+      </nav>
+      <button class="theme-toggle" type="button" aria-pressed="false">
+        <span class="toggle-track" aria-hidden="true"><span></span></span>
+        <span class="toggle-label">Dark</span>
+      </button>
+    </header>
+
+    <main class="b-shell">
+      <section class="b-hero">
+        <aside class="profile-card" aria-label="At a glance">
+          <p class="profile-kicker">At a glance</p>
+          <dl>
+            <div>
+              <dt>Role</dt>
+              <dd>Senior expert in chemical risk assessment</dd>
+            </div>
+            <div>
+              <dt>Affiliation</dt>
+              <dd>
+                <a href="https://bior.lv/en" aria-label="BIOR website">BIOR</a>, Riga
+              </dd>
+            </div>
+            <div>
+              <dt>Focus</dt>
+              <dd>Occurrence data, dietary exposure, risk prioritisation</dd>
+            </div>
+            <div>
+              <dt>Foundation</dt>
+              <dd>PhD in analytical chemistry; non-target analysis</dd>
+            </div>
+            <div>
+              <dt>Contact</dt>
+              <dd><a href="mailto:janis.rusko@gmail.com">Email</a></dd>
+            </div>
+          </dl>
+        </aside>
+        <div class="intro-panel">
+          <p class="b-status">CHEMICAL RISK ASSESSMENT / EVIDENCE SYSTEMS / DECISION SUPPORT</p>
+          <h1>Janis Rusko</h1>
+          <p class="b-hero-note">
+            I work on evidence systems for chemical risk assessment in food safety: structuring occurrence
+            and exposure data, comparing risks, and translating results into prioritisation, guidance, and
+            decision-support methods. Analytical chemistry and non-target analysis are the technical foundation.
+          </p>
+        </div>
+      </section>
+
+      <section id="now" class="b-section">
+        <div class="b-section-title">
+          <span>01</span>
+          <div>
+            <p class="section-eyebrow">CURRENT EMPHASIS · 2026</p>
+            <h2>Current Work</h2>
+          </div>
+        </div>
+        <p class="section-intro">
+          Current work is organised around three connected problems: building usable occurrence data,
+          producing interpretable dietary assessments, and improving risk prioritisation.
+        </p>
+        <ol class="workstream-list">
+          <li>
+            <div class="workstream-head">
+              <h3>Occurrence-data infrastructure</h3>
+              <span>IN DEVELOPMENT</span>
+            </div>
+            <p>Developing the Occurrence Router, a workflow for extracting and structuring occurrence data from scientific literature and other evidence sources for downstream risk-assessment use.</p>
+          </li>
+          <li>
+            <div class="workstream-head">
+              <h3>Dietary exposure and risk-benefit assessment</h3>
+            </div>
+            <p>Conducting applied exposure, chemical-risk, and risk-benefit assessments for food contaminants, with outputs designed for guidance and policy-facing decisions.</p>
+          </li>
+          <li>
+            <div class="workstream-head">
+              <h3>Risk prioritisation and decision-support methods</h3>
+            </div>
+            <p>Developing methods and evidence structures for ranking substances, identifying gaps, and directing assessment and monitoring effort.</p>
+          </li>
+        </ol>
+      </section>
+
+      <section id="direction" class="b-section">
+        <div class="b-section-title">
+          <span>02</span>
+          <h2>Research Direction</h2>
+        </div>
+        <p class="section-intro">
+          The longer-term programme is to improve the interface between chemical evidence and decisions:
+          from fragmented data to traceable prioritisation, interpretable assessments, and usable guidance.
+        </p>
+        <ol class="question-list">
+          <li>
+            <h3>Risk prioritisation</h3>
+            <p>How should limited assessment and monitoring resources be directed toward the most relevant chemical risks?</p>
+          </li>
+          <li>
+            <h3>Evidence systems</h3>
+            <p>How can fragmented occurrence, exposure, and hazard evidence be structured into usable assessment workflows?</p>
+          </li>
+          <li>
+            <h3>Assessment and guidance</h3>
+            <p>How can exposure data be translated into robust, interpretable conclusions and proportionate guidance?</p>
+          </li>
+          <li>
+            <h3>Automation and data methods</h3>
+            <p>Where can automation, AI-assisted extraction, and modern data methods improve the quality and efficiency of risk assessment?</p>
+          </li>
+        </ol>
+        <h3 class="subsection-heading">Progression</h3>
+        <div class="direction-path">
+          <article>
+            <span>01</span>
+            <h3>Analytical chemistry</h3>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>Non-target screening</h3>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>Applied risk assessment</h3>
+          </article>
+          <article>
+            <span>04</span>
+            <h3>Evidence systems and prioritisation</h3>
+          </article>
+        </div>
+      </section>
+
+      <section id="work" class="b-section">
+        <div class="b-section-title">
+          <span>03</span>
+          <h2>Selected Work</h2>
+        </div>
+        <div class="selected-work-list">
+          <article>
+            <p class="work-category">Postdoctoral research</p>
+            <div class="selected-work-main">
+              <h3>From Data to Decisions</h3>
+              <span>2025&ndash;ONGOING</span>
+              <p>Smart tools for food-safety risk assessment and prioritisation. Postdoctoral research on structured, data-driven methods for chemical-risk decision support.</p>
+              <!-- TODO: Add official BIOR project page link when available. -->
+            </div>
+          </article>
+          <article>
+            <p class="work-category">Occurrence-data infrastructure</p>
+            <div class="selected-work-main">
+              <h3>Occurrence Router</h3>
+              <span>IN DEVELOPMENT</span>
+              <p>A workflow for converting fragmented scientific literature and other evidence sources into structured occurrence data for risk-assessment workflows.</p>
+            </div>
+          </article>
+          <article>
+            <p class="work-category">Risk-benefit assessment</p>
+            <div class="selected-work-main">
+              <h3>Deterministic Pilot Risk-Benefit Assessment of Latvian Inland Fish</h3>
+              <span>2026</span>
+              <p>Safe weekly consumption guidance integrating nutritional benefits with contaminant-related risks.</p>
+              <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12984848/">Public article</a>
+            </div>
+          </article>
+          <article>
+            <p class="work-category">Evidence synthesis</p>
+            <div class="selected-work-main">
+              <h3>Persistent Organic Pollutants in Bee Products</h3>
+              <span>ONGOING</span>
+              <p>Structured review work on contaminant occurrence in bee products, with an emphasis on evidence mapping and data usability.</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="earlier-foundations">
+          <h3 class="subsection-heading">Earlier Foundations</h3>
+          <details>
+            <summary>
+              <span>Applied risk assessment and decision support</span>
+              <span>2018&ndash;PRESENT</span>
+            </summary>
+            <p>Food-safety risk assessment, dietary exposure assessment, contaminant evaluation, risk-benefit analysis, evidence synthesis, and scientific support for policy-facing questions. This work led increasingly toward risk prioritisation and practical decision-support methods.</p>
+          </details>
+          <details>
+            <summary>
+              <span>Non-target screening and analytical workflows</span>
+              <span>2017&ndash;2021</span>
+            </summary>
+            <p>
+              PhD work in analytical chemistry, high-resolution mass spectrometry, non-target screening,
+              food-contact materials, and the interpretation of complex chemical evidence.
+              <a href="https://dspace.lu.lv/dspace/bitstream/handle/7/56466/298-83914-Rusko_Janis_jr12046.pdf?isAllowed=y&amp;sequence=1">PhD thesis</a>
+            </p>
+          </details>
+          <details>
+            <summary>
+              <span>Analytical and synthetic chemistry foundation</span>
+              <span>2012&ndash;2017</span>
+            </summary>
+            <p>Organic chemistry work at the University of Latvia, including bachelor-level research and industrial projects, followed by analytical method development and early laboratory work at BIOR.</p>
+          </details>
+        </div>
+      </section>
+
+      <section id="credentials" class="b-section">
+        <div class="b-section-title">
+          <span>04</span>
+          <h2>Credentials</h2>
+        </div>
+        <div class="profile-grid">
+          <article>
+            <h3>Current role</h3>
+            <p>Senior expert in chemical risk assessment at <a href="https://bior.lv/en">BIOR</a></p>
+          </article>
+          <article>
+            <h3>Governance</h3>
+            <p>Alternate member of <a href="https://www.efsa.europa.eu/bs/people/mbmembers">EFSA's Management Board</a>, 2022&ndash;present</p>
+          </article>
+          <article>
+            <h3>Education</h3>
+            <p>PhD in analytical chemistry, University of Latvia</p>
+          </article>
+          <article>
+            <h3>Training and exchange</h3>
+            <p>EU-FORA fellowship and international training in food-safety risk assessment</p>
+          </article>
+        </div>
+      </section>
+
+      <footer class="site-footer">
+        <div class="contact-row">
+          <a href="mailto:janis.rusko@gmail.com">Email</a>
+          <a href="https://orcid.org/0000-0002-9027-8895">ORCID</a>
+          <a href="https://scholar.google.com/citations?user=-XgMIq8AAAAJ&amp;hl=en">Google Scholar</a>
+          <!-- CV file must be added manually at assets/janis-rusko-cv.pdf. -->
+          <a href="assets/janis-rusko-cv.pdf">CV (PDF)</a>
+          <!-- TODO: Add LinkedIn URL when confirmed. -->
+          <!-- TODO: Add GitHub or public Occurrence Router repository URL when available. -->
+        </div>
+      </footer>
+
+    </main>
+
+    <script>
+      (function () {
+        var root = document.documentElement;
+        var button = document.querySelector(".theme-toggle");
+        var label = document.querySelector(".toggle-label");
+
+        function setTheme(theme) {
+          root.dataset.theme = theme;
+          localStorage.setItem("theme", theme);
+          var isLight = theme === "light";
+          button.setAttribute("aria-pressed", String(isLight));
+          label.textContent = isLight ? "Light" : "Dark";
+        }
+
+        setTheme(root.dataset.theme || "dark");
+
+        button.addEventListener("click", function () {
+          setTheme(root.dataset.theme === "light" ? "dark" : "light");
+        });
+      })();
+    </script>
+  </body>
+</html>
