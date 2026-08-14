@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://janisrusko.github.io/sitemap.xml

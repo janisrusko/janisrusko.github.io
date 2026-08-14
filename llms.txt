@@ -1,0 +1,40 @@
+# Jānis Ruško (Janis Rusko)
+
+Jānis Ruško, professionally also using the name Janis Rusko, is a senior expert in chemical risk assessment at BIOR in Riga. His work focuses on chemical risk assessment for food safety, integrated chemical evidence, dietary exposure assessment, risk-benefit assessment, risk prioritisation, evidence synthesis, guidance, and policy-facing decision support.
+
+Analytical chemistry and non-target analysis are the technical foundation of the profile. The current research direction is evidence infrastructure for chemical risk assessment: structuring fragmented evidence, improving prioritisation, and developing practical decision-support methods.
+
+## Current Emphasis
+
+- Integrated evidence infrastructure combining monitoring and occurrence data, food-consumption information, toxicological reference values, scientific literature, and predictive toxicology evidence. AI-assisted literature extraction is one supporting method for expanding and structuring occurrence evidence.
+- Transparent risk-ranking, uncertainty, and monitoring-prioritisation methods for identifying evidence gaps and directing assessment and monitoring resources.
+- Applied exposure, chemical-risk, and risk-benefit assessments designed for interpretable conclusions, proportionate guidance, and policy-facing decisions.
+
+## Selected Work
+
+- From Data to Decisions: postdoctoral research project 1.1.1.9/LZP/1/24/124, 2025-ongoing, developing structured decision-support methods that combine occurrence and monitoring data, food consumption, toxicological reference values, scientific literature, predictive toxicology evidence, and uncertainty. Current progress includes completed initial data harmonisation, toxicological-reference-value integration, food-consumption linkage, and development of the risk-prioritisation framework. Official project page: https://bior.lv/en/projekts/the-scientific-institute-bior-in-cooperation-with-the-latvian-council-of-science-lcs-is-implementing-the-research-application-no-1-1-1-9-lzp-1-24-124-from-data-to-decis/
+- Persistent Organic Pollutants in Bee Products: structured review and evidence mapping on contaminant occurrence in bee products, supporting evidence synthesis, data reuse, and risk prioritisation.
+
+## Selected Outputs
+
+- 2026: Deterministic Pilot Risk-Benefit Assessment of Latvian Inland Fish: Safe Weekly Consumption Guidance. Foods. Risk-benefit guidance. https://doi.org/10.3390/foods15050901
+- 2021: Phenolic Profiles of Raw Mono- and Polyfloral Honeys from Latvia. Journal of Food Composition and Analysis. Analytical foundation. https://doi.org/10.1016/j.jfca.2021.103813
+- 2020: Non-target and Suspected-target Screening for Potentially Hazardous Chemicals in Food Contact Materials: Investigation of Paper Straws. Food Additives & Contaminants: Part A. Non-target screening. https://doi.org/10.1080/19440049.2020.1711969
+- 2021: Rapid Determination of Pharmaceuticals in Wastewater by Direct Infusion HRMS Using Target and Suspect Screening Analysis. Science of the Total Environment. Screening methods. https://doi.org/10.1016/j.scitotenv.2020.142688
+
+## Credentials
+
+- Senior expert in chemical risk assessment at BIOR.
+- Alternate member of EFSA's Management Board, 2022-present.
+- PhD in analytical chemistry, University of Latvia.
+- COST Management Committee member for Latvia: Agrifood-OneAI (CA25159; starts September 2026) and BeSafeBeeHoney (CA22105).
+
+## Public Links
+
+- Website: https://janisrusko.github.io/
+- LinkedIn: https://www.linkedin.com/in/janisrusko/
+- ORCID: https://orcid.org/0000-0002-9027-8895
+- Google Scholar: https://scholar.google.com/citations?user=-XgMIq8AAAAJ&hl=en
+- EFSA Management Board: https://www.efsa.europa.eu/en/people/mbmembers
+- COST Agrifood-OneAI: https://www.cost.eu/actions/CA25159/
+- COST BeSafeBeeHoney: https://www.cost.eu/actions/CA22105/
