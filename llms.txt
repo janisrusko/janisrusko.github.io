@@ -12,8 +12,8 @@ Analytical chemistry and non-target analysis are the technical foundation of the
 
 ## Selected Work
 
-- From Data to Decisions: postdoctoral research project 1.1.1.9/LZP/1/24/124, 2025-ongoing, developing structured decision-support methods that combine occurrence and monitoring data, food consumption, toxicological reference values, scientific literature, predictive toxicology evidence, and uncertainty. Current progress includes completed initial data harmonisation, toxicological-reference-value integration, food-consumption linkage, and development of the risk-prioritisation framework. Official project page: https://bior.lv/en/projekts/the-scientific-institute-bior-in-cooperation-with-the-latvian-council-of-science-lcs-is-implementing-the-research-application-no-1-1-1-9-lzp-1-24-124-from-data-to-decis/
-- Persistent Organic Pollutants in Bee Products: structured review and evidence mapping on contaminant occurrence in bee products, supporting evidence synthesis, data reuse, and risk prioritisation.
+- From Data to Decisions: postdoctoral research project 1.1.1.9/LZP/1/24/124, 2025-ongoing, developing structured decision-support methods that combine occurrence and monitoring data, food consumption, toxicological reference values, scientific literature, predictive toxicology evidence, and uncertainty. Current progress includes completion of the first data-collection and harmonisation work package, continued toxicological-reference-value integration, initiation of consumption-data linkage, and further development of risk-prioritisation methods. Official project page: https://bior.lv/en/projekts/the-scientific-institute-bior-in-cooperation-with-the-latvian-council-of-science-lcs-is-implementing-the-research-application-no-1-1-1-9-lzp-1-24-124-from-data-to-decis/ Progress update: https://bior.lv/en/project-news/updates-on-project-no-1-1-1-9-lzp-1-24-124-for-the-period-from-2-january-2026-to-30-june-2026/
+- Systematic review of persistent and emerging environmental contaminants in edible bee products: ongoing review of occurrence evidence supporting evidence synthesis, data reuse, and risk prioritisation. Source: https://bior.lv/en/project-news/updates-on-project-no-1-1-1-9-lzp-1-24-124-for-the-period-from-2-january-2026-to-30-june-2026/
 
 ## Selected Outputs
 
@@ -35,6 +35,7 @@ Analytical chemistry and non-target analysis are the technical foundation of the
 - LinkedIn: https://www.linkedin.com/in/janisrusko/
 - ORCID: https://orcid.org/0000-0002-9027-8895
 - Google Scholar: https://scholar.google.com/citations?user=-XgMIq8AAAAJ&hl=en
+- GitHub: https://github.com/janisrusko
 - EFSA Management Board: https://www.efsa.europa.eu/en/people/mbmembers
 - COST Agrifood-OneAI: https://www.cost.eu/actions/CA25159/
 - COST BeSafeBeeHoney: https://www.cost.eu/actions/CA22105/
