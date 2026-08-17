@@ -4,15 +4,14 @@ Last reviewed: 2026-08-17
 
 This list records recommendations from the August 2026 website audit that are intentionally not implemented yet. It uses triggers rather than promised dates. The site should remain static, fast, privacy-minimal, evidence-led, and free of unsupported professional claims.
 
-## Release follow-up
+## Outstanding release follow-up
 
 - [ ] In Google Search Console, inspect `https://janisrusko.github.io/`, test the live URL, request indexing, and resubmit `sitemap.xml` after the current release is deployed.
-- [ ] Check the deployed page with Google Rich Results Test and Schema.org Validator.
-- [ ] Validate the deployed HTML with W3C Nu and verify every internal fragment and production asset again.
-- [ ] Recheck external links; treat expected bot-blocking responses from LinkedIn and some publishers separately from broken URLs.
 - [ ] Run PageSpeed Insights against the live URL and compare a repeated Lighthouse median with the saved local baseline.
 - [ ] Check the deployed social card in LinkedIn Post Inspector or another Open Graph preview tool.
 - [ ] Review Search Console Core Web Vitals when sufficient field data become available; do not treat a single synthetic score as permanent.
+
+Completed during release validation: Google Rich Results Test and Schema.org Validator; W3C Nu; internal fragments and production assets; and external-link checks, with expected bot blocking distinguished from broken URLs.
 
 ## Reference pages
 
@@ -27,7 +26,7 @@ Build these only when there is enough durable, public material to make each URL 
 - [ ] Decide whether a separate **about** page would add evidence or simply duplicate the homepage.
 - [ ] Create a **speaking/training** page only after confirming that these activities are publicly offered and documenting relevant examples.
 - [ ] Create a **resources** hub only when multiple maintained tools, datasets, guides, or downloads exist.
-- [ ] Create a dedicated page for the edible-bee-products evidence map when its protocol, results, or citable output can be shared.
+- [ ] Create a dedicated page for the edible-bee-products systematic review when its protocol, results, or citable output can be shared.
 
 ## Content and UX decisions
 
