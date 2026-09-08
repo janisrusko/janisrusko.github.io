@@ -1,45 +1,29 @@
 # Jānis Ruško (Janis Rusko)
 
-Jānis Ruško, professionally also using the name Janis Rusko, is a senior expert in chemical risk assessment at BIOR in Riga. His work focuses on chemical risk assessment for food safety, integrated chemical evidence, dietary exposure assessment, risk-benefit assessment, risk prioritisation, evidence synthesis, guidance, and policy-facing decision support.
+Jānis Ruško is a senior expert in chemical risk assessment and an analytical chemist at BIOR in Riga, Latvia. His research connects contaminant measurements with dietary exposure and risk assessment to identify chemical risks needing closer attention.
 
-Analytical chemistry and non-target analysis are the technical foundation of the profile. The current research direction is evidence infrastructure for chemical risk assessment: structuring fragmented evidence, improving prioritisation, and developing practical decision-support methods.
+## Current research
 
-## Current Emphasis
+From Data to Decisions (2025–2028), research application 1.1.1.9/LZP/1/24/124: he leads a postdoctoral project building a harmonised database of contaminant measurements in Latvian food and feed, linking monitoring and research data with food consumption and toxicological reference values. The aim is to compare chemical risks, make uncertainty visible and support assessment and monitoring priorities. The contaminants list and database specification are complete. Data linkage and risk-prioritisation methods remain in development, including adaptation of the Swedish Risk Thermometer approach. Literature-data extraction is another strand of this work.
 
-- Integrated evidence infrastructure combining monitoring and occurrence data, food-consumption information, toxicological reference values, scientific literature, and predictive toxicology evidence. AI-assisted literature extraction is one supporting method for expanding and structuring occurrence evidence.
-- Transparent risk-ranking, uncertainty, and monitoring-prioritisation methods for identifying evidence gaps and directing assessment and monitoring resources.
-- Applied exposure, chemical-risk, and risk-benefit assessments designed for interpretable conclusions, proportionate guidance, and policy-facing decisions.
+Project: https://bior.lv/en/projekts/the-scientific-institute-bior-in-cooperation-with-the-latvian-council-of-science-lcs-is-implementing-the-research-application-no-1-1-1-9-lzp-1-24-124-from-data-to-decis/
+Progress: https://bior.lv/en/project-news/updates-on-project-no-1-1-1-9-lzp-1-24-124-for-the-period-from-2-january-2026-to-30-june-2026/
 
-## Selected Work
+## Selected research
 
-- From Data to Decisions: principal investigator, postdoctoral research project 1.1.1.9/LZP/1/24/124, 2025–2028. Building a harmonised chemical-contaminant occurrence database for Latvian food and feed. The combined contaminants taxonomy and database specification are completed; ongoing work links occurrence evidence with toxicological reference values and food-consumption data to develop risk-prioritisation methods. Official project page: https://bior.lv/en/projekts/the-scientific-institute-bior-in-cooperation-with-the-latvian-council-of-science-lcs-is-implementing-the-research-application-no-1-1-1-9-lzp-1-24-124-from-data-to-decis/
-- Contaminants in edible bee products: coordinates literature search, screening and data extraction within BeSafeBeeHoney Working Group 2, covering honey, pollen, bee bread, royal jelly and propolis. https://www.cost.eu/actions/CA22105/
-- Drinking-water risk assessment and monitoring: led the 2023–2026 development, validation and delivery of BIOR's national toolkit to Latvia's Ministry of Health, covering more than 200 parameters.
-- Fish consumption: compiled contaminant and nutritional-composition evidence for SEAwise and led BIOR's GreenAgroRes task, including survey design and fish-sampling coordination. First author of the 2026 Latvian inland-fish pilot risk-benefit assessment.
+- Fish consumption: first author of the 2026 pilot risk-benefit assessment of Latvian inland fish, connecting contaminant exposure and nutritional benefits to weekly-consumption guidance. Foods. https://doi.org/10.3390/foods15050901
+- Bee-product contaminants: coordinates literature search, screening and data extraction within BeSafeBeeHoney, bringing occurrence evidence together across honey, pollen, bee bread, royal jelly and propolis. COST CA22105: https://www.cost.eu/actions/CA22105/ Related publication (co-author): Glyphosate in apiculture: occurrence patterns across honey, pollen, and beebread. Food Control, 2026. https://doi.org/10.1016/j.foodcont.2025.111649
+- Non-target screening: first-author study using high-resolution mass spectrometry to investigate potentially hazardous chemicals in paper straws and food-contact materials. Food Additives & Contaminants: Part A, 2020. https://doi.org/10.1080/19440049.2020.1711969
 
-## Selected Outputs
+## Background
 
-- 2026: Glyphosate in apiculture: occurrence patterns across honey, pollen, and beebread. Food Control. Co-author; occurrence evidence. https://doi.org/10.1016/j.foodcont.2025.111649
+Prepares chemical risk assessments and scientific opinions for Latvian authorities. PhD in Chemistry, University of Latvia (2021), with research in non-target screening and high-resolution mass spectrometry. Latvia's alternate member of EFSA's Management Board. COST Management Committee member for Latvia in BeSafeBeeHoney and Agrifood-OneAI (Action starts September 2026). Teaches food-safety risk assessment at Rīga Stradiņš University, the University of Latvia and Riga Technical University. Former BTSF tutor (2024–2025).
 
-- 2026: Deterministic Pilot Risk-Benefit Assessment of Latvian Inland Fish: Safe Weekly Consumption Guidance. Foods. Risk-benefit guidance. https://doi.org/10.3390/foods15050901
-- 2021: Phenolic Profiles of Raw Mono- and Polyfloral Honeys from Latvia. Journal of Food Composition and Analysis. Analytical foundation. https://doi.org/10.1016/j.jfca.2021.103813
-- 2020: Non-target and Suspected-target Screening for Potentially Hazardous Chemicals in Food Contact Materials: Investigation of Paper Straws. Food Additives & Contaminants: Part A. Non-target screening. https://doi.org/10.1080/19440049.2020.1711969
-- 2021: Rapid Determination of Pharmaceuticals in Wastewater by Direct Infusion HRMS Using Target and Suspect Screening Analysis. Science of the Total Environment. Screening methods. https://doi.org/10.1016/j.scitotenv.2020.142688
+## Collaboration
 
-## Credentials
+Welcomes collaboration on combining contaminant-occurrence datasets, extracting literature evidence, and developing dietary-exposure and risk-prioritisation methods, particularly projects connecting laboratories, research groups and public risk-assessment institutions. Contact through LinkedIn.
 
-- Senior expert in chemical risk assessment at BIOR.
-- Alternate member of EFSA's Management Board, 2022-present.
-- PhD in Chemistry, University of Latvia (2021), focused on non-target screening and high-resolution mass spectrometry.
-- COST Management Committee member for Latvia: Agrifood-OneAI (CA25159; starts September 2026) and BeSafeBeeHoney (CA22105).
-
-## Teaching and Professional Training
-
-- Teaches food-safety and chemical-risk assessment at Rīga Stradiņš University, the University of Latvia and Riga Technical University. Experience includes BSc/MSc thesis supervision and co-supervision in analytical chemistry and food authenticity.
-- Contracted BTSF tutor, 2024–2025: modules on veterinary medicinal product authorisation, risk-based residue surveillance and import controls, delivered in Puławy, Dublin and Brescia to laboratory staff from non-EU countries.
-- EFSA EU-FORA fellow, CNR Institute of Protein Biochemistry, Naples, 2017–2018: co-developed automated enzymatic biosensors for pesticide-contamination assessment.
-
-## Public Links
+## Public links
 
 - Website: https://janisrusko.github.io/
 - LinkedIn: https://www.linkedin.com/in/janisrusko/
@@ -48,4 +32,3 @@ Analytical chemistry and non-target analysis are the technical foundation of the
 - GitHub: https://github.com/janisrusko
 - EFSA Management Board: https://www.efsa.europa.eu/en/people/mbmembers
 - COST Agrifood-OneAI: https://www.cost.eu/actions/CA25159/
-- COST BeSafeBeeHoney: https://www.cost.eu/actions/CA22105/

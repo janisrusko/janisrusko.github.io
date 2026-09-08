@@ -6,7 +6,7 @@
     <title>Jānis Ruško | Food-Safety Chemical Risk Assessment &amp; Prioritisation</title>
     <meta
       name="description"
-      content="Jānis Ruško (Janis Rusko) works on chemical food-safety risk assessment, dietary exposure, occurrence data, risk prioritisation and decision-support methods."
+      content="Jānis Ruško (Janis Rusko), chemical risk assessor and analytical chemist at BIOR, connects contaminant measurements with dietary exposure and food-safety risk prioritisation."
     >
     <meta name="author" content="Jānis Ruško">
     <meta name="robots" content="index,follow,max-image-preview:large">
@@ -21,7 +21,7 @@
     <meta property="og:type" content="profile">
     <meta property="og:site_name" content="Jānis Ruško">
     <meta property="og:title" content="Jānis Ruško | Food-Safety Chemical Risk Assessment &amp; Prioritisation">
-    <meta property="og:description" content="Jānis Ruško (Janis Rusko) works on chemical food-safety risk assessment, dietary exposure, occurrence data, risk prioritisation and decision-support methods.">
+    <meta property="og:description" content="Jānis Ruško (Janis Rusko), chemical risk assessor and analytical chemist at BIOR, connects contaminant measurements with dietary exposure and food-safety risk prioritisation.">
     <meta property="og:url" content="https://janisrusko.github.io/">
     <meta property="og:image" content="https://janisrusko.github.io/assets/og-janis-rusko.jpg">
     <meta property="og:image:type" content="image/jpeg">
@@ -31,7 +31,7 @@
     <meta property="og:locale" content="en_GB">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Jānis Ruško | Food-Safety Chemical Risk Assessment &amp; Prioritisation">
-    <meta name="twitter:description" content="Jānis Ruško (Janis Rusko) works on chemical food-safety risk assessment, dietary exposure, occurrence data, risk prioritisation and decision-support methods.">
+    <meta name="twitter:description" content="Jānis Ruško (Janis Rusko), chemical risk assessor and analytical chemist at BIOR, connects contaminant measurements with dietary exposure and food-safety risk prioritisation.">
     <meta name="twitter:image" content="https://janisrusko.github.io/assets/og-janis-rusko.jpg">
     <meta name="twitter:image:alt" content="Abstract evidence network and risk-assessment charts in muted teal and gold">
     <script type="application/ld+json">
@@ -51,7 +51,7 @@
             "@id": "https://janisrusko.github.io/#profile",
             "url": "https://janisrusko.github.io/",
             "name": "Jānis Ruško",
-            "description": "Jānis Ruško (Janis Rusko) works on chemical food-safety risk assessment, dietary exposure, occurrence data, risk prioritisation and decision-support methods.",
+            "description": "Jānis Ruško (Janis Rusko), chemical risk assessor and analytical chemist at BIOR, connects contaminant measurements with dietary exposure and food-safety risk prioritisation.",
             "inLanguage": "en",
             "isPartOf": {
               "@id": "https://janisrusko.github.io/#website"
@@ -290,6 +290,7 @@ summary:focus-visible {
 .b-hero {
   display: grid;
   grid-template-columns: minmax(15rem, 0.34fr) minmax(0, 1fr);
+  grid-template-areas: "profile intro";
   align-items: start;
   gap: clamp(1.5rem, 5vw, 4rem);
   padding: clamp(2rem, 5vw, 3.2rem) 0 clamp(2.2rem, 5vw, 3.8rem);
@@ -357,7 +358,12 @@ summary:focus-visible {
   color: var(--b-bg);
 }
 
+.intro-panel {
+  grid-area: intro;
+}
+
 .profile-card {
+  grid-area: profile;
   align-self: stretch;
   display: flex;
   flex-direction: column;
@@ -747,6 +753,28 @@ summary:focus-visible {
   color: var(--b-text);
 }
 
+.publication-links {
+  margin-top: 1rem;
+  color: var(--b-muted);
+  line-height: 1.55;
+}
+
+.publication-links a {
+  text-underline-offset: 0.18em;
+}
+
+.publication-links a:hover {
+  color: var(--b-accent);
+}
+
+.section-actions {
+  margin-left: 4rem;
+}
+
+#direction {
+  scroll-margin-top: 9rem;
+}
+
 .site-meta {
   margin-top: 0.8rem;
   color: var(--b-muted);
@@ -786,6 +814,7 @@ summary:focus-visible {
   }
 
   .b-hero {
+    grid-template-areas: "intro" "profile";
     min-height: auto;
     padding-top: 1.6rem;
   }
@@ -816,7 +845,8 @@ summary:focus-visible {
     min-height: auto;
   }
 
-  .section-intro {
+  .section-intro,
+  .section-actions {
     margin-left: 0;
   }
 
@@ -864,10 +894,10 @@ summary:focus-visible {
     <header class="b-shell">
       <a class="wordmark" href="#top" aria-label="Jānis Ruško home">Jānis Ruško</a>
       <nav aria-label="Primary navigation">
-        <a href="#now">Now</a>
-        <a href="#direction">Direction</a>
+        <a href="#now">Research</a>
         <a href="#work">Work</a>
-        <a href="#credentials">Credentials</a>
+        <a href="#credentials">Background</a>
+        <a href="#collaboration">Collaborate</a>
       </nav>
       <button class="theme-toggle" type="button" aria-label="Switch to light theme">
         <span class="toggle-track" aria-hidden="true"><span></span></span>
@@ -876,7 +906,16 @@ summary:focus-visible {
     </header>
 
     <main id="main" class="b-shell" tabindex="-1">
-      <section class="b-hero">
+      <section class="b-hero" aria-labelledby="name">
+        <div class="intro-panel">
+          <p class="b-status">Chemical food safety · Research and assessment</p>
+          <h1 id="name">Jānis Ruško</h1>
+          <p class="b-hero-note">I am a chemical risk assessor and analytical chemist at BIOR in Riga. My research connects measurements of contaminants in food with dietary exposure and risk assessment, to help identify which chemical risks need closer attention.</p>
+          <div class="hero-actions">
+            <a class="hero-action hero-action-primary" href="#now">Explore my research</a>
+            <a class="hero-action" href="#collaboration">Discuss collaboration</a>
+          </div>
+        </div>
         <aside class="profile-card" aria-label="At a glance">
           <p class="profile-kicker">At a glance</p>
           <dl>
@@ -886,270 +925,110 @@ summary:focus-visible {
             </div>
             <div>
               <dt>Affiliation</dt>
-              <dd>
-                <a href="https://bior.lv/en" aria-label="BIOR website">BIOR</a>, Riga
-              </dd>
+              <dd><a href="https://bior.lv/en" aria-label="BIOR website">BIOR</a> · Riga, Latvia</dd>
             </div>
             <div>
-              <dt>Focus</dt>
-              <dd>Integrated evidence, dietary exposure, risk prioritisation</dd>
+              <dt>Current research</dt>
+              <dd>Chemical risk prioritisation</dd>
             </div>
             <div>
-              <dt>Foundation</dt>
-              <dd>PhD in analytical chemistry; non-target analysis</dd>
+              <dt>Technical foundation</dt>
+              <dd>Analytical chemistry and non-target screening</dd>
             </div>
           </dl>
         </aside>
-        <div class="intro-panel">
-          <p class="b-status">CHEMICAL RISK ASSESSMENT / EVIDENCE SYSTEMS / DECISION SUPPORT</p>
-          <h1>Jānis Ruško</h1>
-          <p class="b-hero-note">
-            I work on evidence systems for chemical risk assessment in food safety: structuring occurrence
-            and exposure data, comparing risks, and translating results into prioritisation, guidance, and
-            decision-support methods. Analytical chemistry and non-target analysis are the technical foundation.
-          </p>
-          <div class="hero-actions">
-            <a class="hero-action hero-action-primary" href="#work">Explore current research</a>
-            <a
-              class="hero-action"
-              href="https://www.linkedin.com/in/janisrusko/"
-              aria-label="Discuss research collaboration with Jānis Ruško on LinkedIn"
-            >Discuss research collaboration</a>
-          </div>
-        </div>
       </section>
 
-      <section id="now" class="b-section">
+      <section id="now" class="b-section" aria-labelledby="research-heading">
         <div class="b-section-title">
           <span>01</span>
-          <div>
-            <p class="section-eyebrow">CURRENT EMPHASIS · 2026</p>
-            <h2>Current Work</h2>
-          </div>
+          <h2 id="research-heading">Current research</h2>
         </div>
-        <p class="section-intro">
-          Current work is organised around three connected problems: integrating heterogeneous chemical evidence,
-          developing transparent risk-ranking and monitoring-prioritisation methods, and translating assessments
-          into usable guidance and decisions.
-        </p>
-        <ol class="workstream-list">
-          <li>
-            <div class="workstream-head">
-              <h3>Integrated evidence infrastructure</h3>
+        <p id="direction" class="section-intro">Which chemical risks should food monitoring and assessment focus on when data and resources are limited?</p>
+        <div class="selected-work-list">
+          <article>
+            <p class="work-category">Postdoctoral research<br>2025&ndash;2028 · BIOR</p>
+            <div class="selected-work-main">
+              <h3>From Data to Decisions</h3>
+              <p>I lead a postdoctoral project building a harmonised database of contaminant measurements in Latvian food and feed, linking monitoring and research data with food consumption and toxicological reference values. The aim is to compare chemical risks on a consistent basis, make uncertainty visible and identify priorities for further assessment and monitoring.</p>
+              <p>The contaminants list and database specification are complete. I am now working on linking the data and developing risk-prioritisation methods, including adaptation of the Swedish Risk Thermometer approach. Literature-data extraction is another strand of this work.</p>
+              <a href="https://bior.lv/en/projekts/the-scientific-institute-bior-in-cooperation-with-the-latvian-council-of-science-lcs-is-implementing-the-research-application-no-1-1-1-9-lzp-1-24-124-from-data-to-decis/">About the project at BIOR</a>
+              <a href="https://bior.lv/en/project-news/updates-on-project-no-1-1-1-9-lzp-1-24-124-for-the-period-from-2-january-2026-to-30-june-2026/">Progress: January&ndash;June 2026</a>
+              <span>Research application 1.1.1.9/LZP/1/24/124</span>
             </div>
-            <p>Integrating monitoring and occurrence data, food-consumption information, toxicological reference values, scientific literature, and predictive toxicology evidence into structured and traceable assessment workflows. AI-assisted extraction from scientific literature is being explored as one method for expanding and structuring occurrence evidence.</p>
-          </li>
-          <li>
-            <div class="workstream-head">
-              <h3>Risk ranking, uncertainty and monitoring prioritisation</h3>
-            </div>
-            <p>Developing transparent methods for comparing chemical risks, representing uncertainty, identifying important evidence gaps, and directing limited assessment and monitoring resources.</p>
-          </li>
-          <li>
-            <div class="workstream-head">
-              <h3>Exposure assessment, risk-benefit analysis and guidance</h3>
-            </div>
-            <p>Conducting applied exposure, chemical-risk, and risk-benefit assessments, with outputs designed for interpretable conclusions, proportionate guidance, and policy-facing decisions.</p>
-          </li>
-        </ol>
+          </article>
+        </div>
       </section>
 
-      <section id="direction" class="b-section">
+      <section id="work" class="b-section" aria-labelledby="work-heading">
         <div class="b-section-title">
           <span>02</span>
-          <h2>Research Direction</h2>
-        </div>
-        <p class="section-intro">
-          The longer-term programme is to improve the interface between chemical evidence and decisions:
-          from fragmented data to traceable prioritisation, interpretable assessments, and usable guidance.
-        </p>
-        <ol class="question-list">
-          <li>
-            <h3>Risk prioritisation</h3>
-            <p>How should limited assessment and monitoring resources be directed toward the most relevant chemical risks?</p>
-          </li>
-          <li>
-            <h3>Evidence systems</h3>
-            <p>How can fragmented occurrence, exposure, and hazard evidence be structured into usable assessment workflows?</p>
-          </li>
-          <li>
-            <h3>Assessment and guidance</h3>
-            <p>How can exposure data be translated into robust, interpretable conclusions and proportionate guidance?</p>
-          </li>
-          <li>
-            <h3>Automation and data methods</h3>
-            <p>Where can automation, AI-assisted extraction, and modern data methods improve the quality and efficiency of risk assessment?</p>
-          </li>
-        </ol>
-      </section>
-
-      <section id="work" class="b-section">
-        <div class="b-section-title">
-          <span>03</span>
-          <h2>Selected Work</h2>
+          <h2 id="work-heading">Selected research</h2>
         </div>
         <div class="selected-work-list">
           <article>
-            <p class="work-category">Postdoctoral research</p>
+            <p class="work-category">Exposure and guidance</p>
             <div class="selected-work-main">
-              <h3><a href="https://bior.lv/en/projekts/the-scientific-institute-bior-in-cooperation-with-the-latvian-council-of-science-lcs-is-implementing-the-research-application-no-1-1-1-9-lzp-1-24-124-from-data-to-decis/">From Data to Decisions</a></h3>
-              <span>Principal investigator · 1.1.1.9/LZP/1/24/124 · 2025&ndash;2028</span>
-              <p>Development of structured decision-support methods combining monitoring and occurrence data, food-consumption information, toxicological reference values, scientific literature, predictive toxicology evidence, and uncertainty to compare chemical risks and support monitoring priorities.</p>
-              <p>Building a harmonised chemical-contaminant occurrence database for Latvian food and feed, with a combined contaminants taxonomy and database specification completed. Ongoing work links occurrence evidence to toxicological reference values and food-consumption data to develop risk-prioritisation methods.</p>
-              <a href="https://bior.lv/en/project-news/updates-on-project-no-1-1-1-9-lzp-1-24-124-for-the-period-from-2-january-2026-to-30-june-2026/">Project update: January&ndash;June 2026</a>
+              <h3>Fish consumption: weighing risks and benefits</h3>
+              <p>As first author of a 2026 pilot study, I assessed contaminant exposure alongside the nutritional benefits of Latvian inland fish to derive weekly-consumption guidance. The work connects chemical measurements with a practical dietary question.</p>
+              <a href="https://doi.org/10.3390/foods15050901">Read the pilot risk-benefit assessment · Foods, 2026</a>
             </div>
           </article>
           <article>
             <p class="work-category">Evidence synthesis</p>
             <div class="selected-work-main">
-              <h3><a href="https://www.cost.eu/actions/CA22105/">Contaminants in edible bee products</a></h3>
-              <span>BeSafeBeeHoney · COST CA22105 · 2023&ndash;present</span>
-              <p>Coordinates literature search, screening and data extraction within Working Group 2, bringing together contaminant-occurrence evidence for honey, pollen, bee bread, royal jelly and propolis. The work supports evidence synthesis, data reuse and monitoring priorities.</p>
+              <h3>Bringing bee-product contaminant evidence together</h3>
+              <p>Within BeSafeBeeHoney, I coordinate literature search, screening and data extraction on contaminants in honey, pollen, bee bread, royal jelly and propolis. This work brings scattered measurements together to examine dietary exposure and gaps in monitoring.</p>
+              <a href="https://www.cost.eu/actions/CA22105/">BeSafeBeeHoney · COST CA22105</a>
+              <a href="https://doi.org/10.1016/j.foodcont.2025.111649">Related work: glyphosate occurrence · Food Control, 2026 · Co-author</a>
             </div>
           </article>
           <article>
-            <p class="work-category">Assessment into practice</p>
+            <p class="work-category">Analytical methods</p>
             <div class="selected-work-main">
-              <h3>Drinking-water risk assessment and monitoring</h3>
-              <span>Toolkit lead · BIOR · 2023&ndash;2026</span>
-              <p>Led the development, validation and delivery of BIOR's national drinking-water risk-assessment and monitoring toolkit to Latvia's Ministry of Health. The toolkit combines hazard identification, risk assessment and monitoring-results evaluation across more than 200 parameters.</p>
-            </div>
-          </article>
-          <article>
-            <p class="work-category">Risk-benefit assessment</p>
-            <div class="selected-work-main">
-              <h3><a href="https://doi.org/10.3390/foods15050901">Fish consumption: from exposure to guidance</a></h3>
-              <span>SEAwise · GreenAgroRes · 2019&ndash;2026</span>
-              <p>Compiled fish contaminant and nutritional-composition evidence for SEAwise and led BIOR's task in GreenAgroRes, including food-consumption survey design and coordination of fish sampling. First author of the 2026 pilot assessment translating Latvian inland-fish evidence into weekly consumption guidance.</p>
+              <h3>Finding chemicals beyond routine target lists</h3>
+              <p>My first-author study of paper straws used high-resolution mass spectrometry and non-target screening to investigate potentially hazardous chemicals in food-contact materials. This analytical background informs how I interpret contaminant measurements and their limitations in risk assessment.</p>
+              <a href="https://doi.org/10.1080/19440049.2020.1711969">Read the paper-straw screening study · Food Additives &amp; Contaminants: Part A, 2020</a>
             </div>
           </article>
         </div>
-
-        <div class="earlier-foundations">
-          <h3 class="subsection-heading">Earlier Foundations</h3>
-          <details>
-            <summary>
-              <span>Applied risk assessment and decision support</span>
-              <span>2018&ndash;PRESENT</span>
-            </summary>
-            <p>
-              Food-safety risk assessment, dietary exposure assessment, contaminant evaluation, risk-benefit analysis, evidence synthesis, and scientific support for policy-facing questions. This work led increasingly toward risk prioritisation and practical decision-support methods. Includes the 2026
-              <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12984848/">deterministic pilot risk-benefit assessment of Latvian inland fish</a>.
-            </p>
-          </details>
-          <details>
-            <summary>
-              <span>Non-target screening and analytical workflows</span>
-              <span>2017&ndash;2021</span>
-            </summary>
-            <p>
-              PhD work in analytical chemistry, high-resolution mass spectrometry, non-target screening,
-              food-contact materials, and the interpretation of complex chemical evidence.
-              <a href="https://dspace.lu.lv/dspace/bitstream/handle/7/56466/298-83914-Rusko_Janis_jr12046.pdf?isAllowed=y&amp;sequence=1">PhD thesis</a>
-            </p>
-          </details>
-          <details>
-            <summary>
-              <span>Analytical and synthetic chemistry foundation</span>
-              <span>2012&ndash;2017</span>
-            </summary>
-            <p>Organic chemistry work at the University of Latvia, including bachelor-level research and industrial projects, followed by analytical method development and early laboratory work at BIOR.</p>
-          </details>
-        </div>
-
-        <div class="selected-outputs">
-          <h3 class="subsection-heading">Selected outputs</h3>
-          <ol class="output-list">
-            <li>
-              <span class="output-year">2026</span>
-              <div class="output-main">
-                <a href="https://doi.org/10.1016/j.foodcont.2025.111649">Glyphosate in apiculture: occurrence patterns across honey, pollen, and beebread</a>
-                <span class="output-venue">Food Control · Co-author</span>
-              </div>
-              <span class="output-label">Occurrence evidence</span>
-            </li>
-            <li>
-              <span class="output-year">2026</span>
-              <div class="output-main">
-                <a href="https://doi.org/10.3390/foods15050901">Deterministic Pilot Risk&ndash;Benefit Assessment of Latvian Inland Fish: Safe Weekly Consumption Guidance</a>
-                <span class="output-venue">Foods</span>
-              </div>
-              <span class="output-label">Risk-benefit guidance</span>
-            </li>
-            <li>
-              <span class="output-year">2021</span>
-              <div class="output-main">
-                <a href="https://doi.org/10.1016/j.jfca.2021.103813">Phenolic Profiles of Raw Mono- and Polyfloral Honeys from Latvia</a>
-                <span class="output-venue">Journal of Food Composition and Analysis</span>
-              </div>
-              <span class="output-label">Analytical foundation</span>
-            </li>
-            <li>
-              <span class="output-year">2020</span>
-              <div class="output-main">
-                <a href="https://doi.org/10.1080/19440049.2020.1711969">Non-target and Suspected-target Screening for Potentially Hazardous Chemicals in Food Contact Materials: Investigation of Paper Straws</a>
-                <span class="output-venue">Food Additives &amp; Contaminants: Part A</span>
-              </div>
-              <span class="output-label">Non-target screening</span>
-            </li>
-            <li>
-              <span class="output-year">2021</span>
-              <div class="output-main">
-                <a href="https://doi.org/10.1016/j.scitotenv.2020.142688">Rapid Determination of Pharmaceuticals in Wastewater by Direct Infusion HRMS Using Target and Suspect Screening Analysis</a>
-                <span class="output-venue">Science of the Total Environment</span>
-              </div>
-              <span class="output-label">Screening methods</span>
-            </li>
-          </ol>
-        </div>
+        <p class="publication-links">More publications: <a href="https://orcid.org/0000-0002-9027-8895">ORCID</a> · <a href="https://scholar.google.com/citations?user=-XgMIq8AAAAJ&amp;hl=en">Google Scholar</a></p>
       </section>
 
-      <section id="credentials" class="b-section">
+      <section id="credentials" class="b-section" aria-labelledby="background-heading">
         <div class="b-section-title">
-          <span>04</span>
-          <h2>Credentials</h2>
+          <span>03</span>
+          <h2 id="background-heading">Background</h2>
         </div>
+        <p class="section-intro">Alongside research, I prepare chemical risk assessments and scientific opinions for Latvian authorities. Working across varied food-safety questions informs my research: how to make sound assessments with the evidence, time and resources available.</p>
         <div class="profile-grid">
           <article>
-            <h3>Current role</h3>
-            <p>Senior expert in chemical risk assessment at <a href="https://bior.lv/en">BIOR</a></p>
+            <h3>Education</h3>
+            <p>PhD in Chemistry, University of Latvia (2021), with research in non-target screening and high-resolution mass spectrometry.</p>
           </article>
           <article>
             <h3>Governance</h3>
-            <p>Alternate member of <a href="https://www.efsa.europa.eu/en/people/mbmembers">EFSA's Management Board</a>, 2022&ndash;present</p>
+            <p>Latvia's alternate member of <a href="https://www.efsa.europa.eu/en/people/mbmembers">EFSA's Management Board</a>.</p>
           </article>
           <article>
-            <h3>Education</h3>
-            <p>PhD in Chemistry, University of Latvia (2021), focused on non-target screening and high-resolution mass spectrometry</p>
+            <h3>Research networks</h3>
+            <p>COST Management Committee member for Latvia in <a href="https://www.cost.eu/actions/CA22105/">BeSafeBeeHoney</a> and <a href="https://www.cost.eu/actions/CA25159/">Agrifood-OneAI</a> (Action starts September 2026).</p>
           </article>
           <article>
-            <h3>European research networks</h3>
-            <p>COST Management Committee member for Latvia: <a href="https://www.cost.eu/actions/CA25159/">Agrifood-OneAI (CA25159; starts September 2026)</a> and <a href="https://www.cost.eu/actions/CA22105/">BeSafeBeeHoney (CA22105)</a></p>
+            <h3>Teaching</h3>
+            <p>Food-safety risk assessment at Rīga Stradiņš University, the University of Latvia and Riga Technical University. Former BTSF tutor (2024&ndash;2025).</p>
           </article>
         </div>
-        <div class="earlier-foundations">
-          <h3 class="subsection-heading">Teaching and professional training</h3>
-          <details>
-            <summary>
-              <span>University teaching</span>
-              <span>Food-safety risk assessment</span>
-            </summary>
-            <p>Teaches food-safety and chemical-risk assessment at Rīga Stradiņš University, the University of Latvia and Riga Technical University, using lectures, case studies and dietary-exposure exercises. Experience also includes BSc and MSc thesis supervision and co-supervision in analytical chemistry and food authenticity.</p>
-          </details>
-          <details>
-            <summary>
-              <span>Better Training for Safer Food (BTSF)</span>
-              <span>2024&ndash;2025</span>
-            </summary>
-            <p>Contracted tutor for the EU programme's course on sampling and analysis of veterinary medicinal product residues. Delivered modules on authorisation, risk-based residue surveillance and import controls for laboratory staff from non-EU countries at sessions in Puławy, Dublin and Brescia.</p>
-          </details>
-          <details>
-            <summary>
-              <span>EU-FORA fellowship</span>
-              <span>2017&ndash;2018</span>
-            </summary>
-            <p>EFSA fellow at the CNR Institute of Protein Biochemistry in Naples, co-developing automated enzymatic biosensors for pesticide-contamination assessment in water and food.</p>
-          </details>
+      </section>
+
+      <section id="collaboration" class="b-section" aria-labelledby="collaboration-heading">
+        <div class="b-section-title">
+          <span>04</span>
+          <h2 id="collaboration-heading">Collaborate</h2>
+        </div>
+        <p class="section-intro">I welcome collaborations on combining contaminant-occurrence datasets, extracting evidence from the literature, and developing dietary-exposure and risk-prioritisation methods. I am particularly interested in projects connecting analytical laboratories, research groups and public risk-assessment institutions.</p>
+        <div class="hero-actions section-actions">
+          <a class="hero-action hero-action-primary" href="https://www.linkedin.com/in/janisrusko/" aria-label="Contact Jānis Ruško on LinkedIn about research collaboration">Get in touch on LinkedIn</a>
         </div>
       </section>
 
@@ -1162,7 +1041,6 @@ summary:focus-visible {
         </div>
         <p class="site-meta">Page created: June 5, 2026 · Last updated: September 8, 2026</p>
       </footer>
-
     </main>
 
     <script>
