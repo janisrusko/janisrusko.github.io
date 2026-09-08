@@ -1,6 +1,9 @@
 # Jānis Ruško (Janis Rusko)
 
-Jānis Ruško is a senior expert in chemical risk assessment at BIOR in Riga, Latvia. His current work spans evidence synthesis, exposure assessment, risk prioritisation, teaching and European scientific cooperation. Analytical chemistry is an earlier technical foundation, not his current practice. The professional record is at https://janisrusko.github.io/work.html
+Jānis Ruško is a senior expert in chemical risk assessment at BIOR in Riga, Latvia. His current work spans evidence synthesis, exposure assessment, risk prioritisation and European scientific cooperation. Analytical chemistry is an earlier technical foundation, not his current practice.
+
+Professional record: https://janisrusko.github.io/work.html
+Speaking and teaching record: https://janisrusko.github.io/speaking.html
 
 ## How the work connects
 
@@ -26,6 +29,10 @@ Progress: https://bior.lv/en/project-news/updates-on-project-no-1-1-1-9-lzp-1-24
 
 His current practice is research-led chemical risk assessment and evidence synthesis. Earlier work included chemical risk-assessment casework and scientific opinions for Latvian authorities. He holds a PhD in Chemistry from the University of Latvia (2021), with research in non-target screening and high-resolution mass spectrometry. He is Latvia's alternate member of EFSA's Management Board, a COST Management Committee member for Latvia in BeSafeBeeHoney and Agrifood-OneAI (2026–2030), teaches food-safety risk assessment at Rīga Stradiņš University, the University of Latvia and Riga Technical University, and was a BTSF tutor in 2024–2025.
 
+## Speaking and teaching
+
+The selected record spans public conversations, scientific conferences, institutional exchanges, recurring university teaching and international professional training. A featured public appearance was “Domā lēni par riskiem” at the Conversation Festival LAMPA on 20 June 2025. The page deliberately excludes attendance-only events, duplicate presentation versions and co-authored posters where personal delivery is unclear.
+
 ## Broader professional record
 
 - Earlier chemical risk-assessment casework for Latvian authorities, beginning in 2018 and no longer part of his current practice.
@@ -43,6 +50,7 @@ Welcomes collaboration on combining contaminant-occurrence datasets, extracting 
 ## Public links
 
 - Website: https://janisrusko.github.io/
+- Speaking and teaching: https://janisrusko.github.io/speaking.html
 - LinkedIn: https://www.linkedin.com/in/janisrusko/
 - ORCID: https://orcid.org/0000-0002-9027-8895
 - Google Scholar: https://scholar.google.com/citations?user=-XgMIq8AAAAJ&hl=en

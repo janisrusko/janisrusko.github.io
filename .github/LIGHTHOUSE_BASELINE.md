@@ -42,9 +42,10 @@ pnpm dlx lighthouse@13.4.1 http://127.0.0.1:4173/ \
 
 ## Expansion check — 2026-09-08
 
-A single mobile regression run followed the addition of the body-of-work page and shared stylesheet. This is a release check rather than a replacement for the repeated-run baseline above.
+A single mobile regression run followed the addition of the body-of-work and speaking pages, the simplified homepage and shared site assets. This is a release check rather than a replacement for the repeated-run baseline above.
 
 | Page | Performance | Accessibility | Best practices | SEO | FCP | LCP | TBT | CLS |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
-| Homepage | 100 | 100 | 100 | 100 | 0.9 s | 1.1 s | 0 ms | 0 |
-| Body of work | 100 | 100 | 100 | 100 | 0.9 s | 1.1 s | 0 ms | 0 |
+| Homepage | 100 | 100 | 100 | 100 | 1.0 s | 1.0 s | 0 ms | 0 |
+| Body of work | 100 | 100 | 100 | 100 | 1.2 s | 1.2 s | 0 ms | 0 |
+| Speaking and teaching | 100 | 100 | 100 | 100 | 1.1 s | 1.1 s | 0 ms | 0 |
