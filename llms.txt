@@ -1,10 +1,17 @@
 # Jānis Ruško (Janis Rusko)
 
-Jānis Ruško is a senior expert in chemical risk assessment and an analytical chemist at BIOR in Riga, Latvia. His research connects contaminant measurements with dietary exposure and risk assessment to identify chemical risks needing closer attention.
+Jānis Ruško is a senior expert in chemical risk assessment at BIOR in Riga, Latvia. His current work spans evidence synthesis, exposure assessment, risk prioritisation, teaching and European scientific cooperation. Analytical chemistry is an earlier technical foundation, not his current practice. The professional record is at https://janisrusko.github.io/work.html
+
+## How the work connects
+
+- Synthesise: occurrence data, food-consumption information, toxicological reference values and scientific literature, with provenance and limitations kept visible.
+- Assess: exposure, uncertainty, risk-benefit trade-offs and priorities.
+- Build: databases, toolkits and transparent methods for exposure assessment, risk comparison and monitoring priorities.
+- Share responsibility: university teaching, supervision, peer review, international training, scientific networks and public governance.
 
 ## Current research
 
-From Data to Decisions (2025–2028), research application 1.1.1.9/LZP/1/24/124: he leads a postdoctoral project building a harmonised database of contaminant measurements in Latvian food and feed, linking monitoring and research data with food consumption and toxicological reference values. The aim is to compare chemical risks, make uncertainty visible and support assessment and monitoring priorities. The contaminants list and database specification are complete. Data linkage and risk-prioritisation methods remain in development, including adaptation of the Swedish Risk Thermometer approach. Literature-data extraction is another strand of this work.
+From Data to Decisions (2025–2028), research application 1.1.1.9/LZP/1/24/124: he leads a postdoctoral project building a harmonised database of chemical-contaminant occurrence data for Latvian food and feed, linking monitoring and research data with food consumption and toxicological reference values. The aim is to compare chemical risks, make uncertainty visible and support assessment and monitoring priorities. The contaminants list and database specification are complete. Data linkage and transparent risk-prioritisation methods remain in development. Literature-data extraction is another strand of this work.
 
 Project: https://bior.lv/en/projekts/the-scientific-institute-bior-in-cooperation-with-the-latvian-council-of-science-lcs-is-implementing-the-research-application-no-1-1-1-9-lzp-1-24-124-from-data-to-decis/
 Progress: https://bior.lv/en/project-news/updates-on-project-no-1-1-1-9-lzp-1-24-124-for-the-period-from-2-january-2026-to-30-june-2026/
@@ -17,7 +24,17 @@ Progress: https://bior.lv/en/project-news/updates-on-project-no-1-1-1-9-lzp-1-24
 
 ## Background
 
-Prepares chemical risk assessments and scientific opinions for Latvian authorities. PhD in Chemistry, University of Latvia (2021), with research in non-target screening and high-resolution mass spectrometry. Latvia's alternate member of EFSA's Management Board. COST Management Committee member for Latvia in BeSafeBeeHoney and Agrifood-OneAI (Action starts September 2026). Teaches food-safety risk assessment at Rīga Stradiņš University, the University of Latvia and Riga Technical University. Former BTSF tutor (2024–2025).
+His current practice is research-led chemical risk assessment and evidence synthesis. Earlier work included chemical risk-assessment casework and scientific opinions for Latvian authorities. He holds a PhD in Chemistry from the University of Latvia (2021), with research in non-target screening and high-resolution mass spectrometry. He is Latvia's alternate member of EFSA's Management Board, a COST Management Committee member for Latvia in BeSafeBeeHoney and Agrifood-OneAI (2026–2030), teaches food-safety risk assessment at Rīga Stradiņš University, the University of Latvia and Riga Technical University, and was a BTSF tutor in 2024–2025.
+
+## Broader professional record
+
+- Earlier chemical risk-assessment casework for Latvian authorities, beginning in 2018 and no longer part of his current practice.
+- Drinking-water derogation assessments and leadership of a national risk-assessment and monitoring toolkit covering more than 200 parameters.
+- Risk-benefit research on fish consumption through SEAwise and GreenAgroRes.
+- Method development in non-target HRMS, anticoccidial residues, food phenolics, honey authenticity and multi-enzymatic biosensors.
+- EFSA EU-FORA fellowship at CNR Naples (2017–2018) and later non-target screening collaboration with the US FDA.
+- Recurring university teaching, thesis supervision, journal peer review and former European Commission BTSF tutoring.
+- Former Alternate Member of the EFSA Focal Point Network (2021–2022) and participation in European expert groups and scientific fora.
 
 ## Collaboration
 

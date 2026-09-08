@@ -36,6 +36,15 @@ pnpm dlx lighthouse@13.4.1 http://127.0.0.1:4173/ \
 
 - This is a synthetic regression baseline, not Chrome field data or a ranking guarantee.
 - The optimized Open Graph image is metadata-only and does not contribute to the normal page render.
-- Lighthouse noted that the inline CSS could be minified, but the category score remained 100 and minifying hand-maintained CSS would reduce readability for negligible transfer savings.
+- Visual styles now live in a shared stylesheet; the small inline theme bootstrap prevents a colour-theme flash before the stylesheet renders.
 - The local server's document-latency observation is not evidence about GitHub Pages response time.
 - Use Search Console Core Web Vitals for field evidence when enough visits exist, and compare later Lighthouse releases with the same environment and repeated-run method.
+
+## Expansion check — 2026-09-08
+
+A single mobile regression run followed the addition of the body-of-work page and shared stylesheet. This is a release check rather than a replacement for the repeated-run baseline above.
+
+| Page | Performance | Accessibility | Best practices | SEO | FCP | LCP | TBT | CLS |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| Homepage | 100 | 100 | 100 | 100 | 0.9 s | 1.1 s | 0 ms | 0 |
+| Body of work | 100 | 100 | 100 | 100 | 0.9 s | 1.1 s | 0 ms | 0 |

@@ -1,6 +1,6 @@
 # Website backlog
 
-Last reviewed: 2026-08-17
+Last reviewed: 2026-09-08
 
 This list records recommendations from the August 2026 website audit that are intentionally not implemented yet. It uses triggers rather than promised dates. The site should remain static, fast, privacy-minimal, evidence-led, and free of unsupported professional claims.
 
@@ -17,6 +17,7 @@ Completed during release validation: Google Rich Results Test and Schema.org Val
 
 Build these only when there is enough durable, public material to make each URL independently useful.
 
+- [x] Create an evidence-backed **body of work** page spanning applied assessment, evidence systems, analytical methods, teaching, scientific service and European cooperation.
 - [ ] Create a dedicated **From Data to Decisions** project page with aims, work packages, progress, evidence links, outputs, limitations, and project-specific metadata.
 - [ ] Create an evergreen **chemical food-safety risk prioritisation** reference page covering inputs, comparison methods, uncertainty, monitoring implications, limitations, and citations.
 - [ ] Create an **occurrence-data infrastructure** reference page, including literature extraction only when a public method or demonstration is ready.
@@ -31,7 +32,7 @@ Build these only when there is enough durable, public material to make each URL 
 ## Content and UX decisions
 
 - [ ] Reassess mobile content order: at small widths the “At a glance” card currently precedes the H1. Change it only if the desktop visual hierarchy and keyboard/reading order can remain coherent.
-- [ ] Reassess whether the compact homepage should remain the primary experience after the first two reference pages exist.
+- [ ] Reassess whether the compact homepage should remain the primary experience after a second specialist reference page exists; the body-of-work page now carries the broader record.
 - [ ] Add page-specific calls to action as new destinations become real; never link to placeholder routes.
 - [ ] Keep `llms.txt` concise and synchronized with visible, source-supported facts rather than expanding it into a duplicate essay.
 - [ ] Add a maintained Latvian `/lv/` section and `hreflang` only if a sustained Latvian-language audience justifies parallel upkeep. Do not mix language variants unpredictably on one URL.
@@ -45,7 +46,8 @@ Build these only when there is enough durable, public material to make each URL 
 
 ## Architecture and quality automation
 
-- [ ] Move repeated CSS and theme JavaScript into shared files when multiple pages create real duplication.
+- [x] Move repeated visual styles into a shared stylesheet when the body-of-work page creates a second maintained page.
+- [ ] Move the small repeated theme script into a shared file when a third maintained page makes the duplication material.
 - [ ] Evaluate Eleventy, Astro static output, or Jekyll when roughly six or more pages need shared templates. Preserve static HTML output and avoid adding client-side framework code.
 - [ ] Introduce a shared identity/publication data source when repetition creates a realistic consistency risk.
 - [ ] Add CI for modern HTML validation, internal/external link checking, JSON-LD smoke tests, accessibility checks, and Lighthouse budgets after a pinned toolchain is selected.
