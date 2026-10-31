@@ -978,6 +978,20 @@ main.b-shell {
   opacity: 0.55;
 }
 
+.map-arc.map-arc-eufora {
+  stroke: var(--b-soft);
+  stroke-dasharray: 6 2;
+  opacity: 0.8;
+}
+
+.map-often {
+  fill: none;
+  stroke: var(--b-warm);
+  stroke-width: 1.5;
+  vector-effect: non-scaling-stroke;
+  opacity: 0.85;
+}
+
 .map-pin {
   stroke-width: 2.5;
 }
