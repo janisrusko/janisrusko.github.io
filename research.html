@@ -6,7 +6,7 @@
     <title>Research | Jānis Ruško</title>
     <meta
       name="description"
-      content="Jānis Ruško's current research: From Data to Decisions, a postdoctoral project at BIOR building data, methods and tools to prioritise chemical risks in food."
+      content="Jānis Ruško's current research: From Data to Decisions, a transparent tool at BIOR that ranks chemical risks in food and maps where the evidence is missing."
     >
     <meta name="author" content="Jānis Ruško">
     <meta name="robots" content="index,follow,max-image-preview:large">
@@ -22,7 +22,7 @@
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Jānis Ruško">
     <meta property="og:title" content="Research | Jānis Ruško">
-    <meta property="og:description" content="From Data to Decisions: data, methods and tools to prioritise chemical risks in food.">
+    <meta property="og:description" content="From Data to Decisions: a transparent tool that ranks chemical risks in food and maps where the evidence is missing.">
     <meta property="og:url" content="https://janisrusko.github.io/research.html">
     <meta property="og:image" content="https://janisrusko.github.io/assets/og-janis-rusko.jpg">
     <meta property="og:image:type" content="image/jpeg">
@@ -32,7 +32,7 @@
     <meta property="og:locale" content="en_GB">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Research | Jānis Ruško">
-    <meta name="twitter:description" content="From Data to Decisions: data, methods and tools to prioritise chemical risks in food.">
+    <meta name="twitter:description" content="From Data to Decisions: a transparent tool that ranks chemical risks in food and maps where the evidence is missing.">
     <meta name="twitter:image" content="https://janisrusko.github.io/assets/og-janis-rusko.jpg">
     <meta name="twitter:image:alt" content="Abstract evidence network and risk-assessment charts in muted teal and gold">
     <script type="application/ld+json">
@@ -44,7 +44,7 @@
             "@id": "https://janisrusko.github.io/research.html#page",
             "url": "https://janisrusko.github.io/research.html",
             "name": "Research | Jānis Ruško",
-            "description": "Jānis Ruško's current research: From Data to Decisions, a postdoctoral project at BIOR building data, methods and tools to prioritise chemical risks in food.",
+            "description": "Jānis Ruško's current research: From Data to Decisions, a transparent tool at BIOR that ranks chemical risks in food and maps where the evidence is missing.",
             "inLanguage": "en",
             "datePublished": "2026-10-31",
             "dateModified": "2026-10-31",
@@ -93,11 +93,11 @@
     <header class="b-shell">
       <a class="wordmark" href="index.html" aria-label="Jānis Ruško home">Jānis Ruško</a>
       <nav aria-label="Primary navigation">
-        <a href="index.html">Overview</a>
         <a href="research.html" aria-current="page">Research</a>
-        <a href="work.html">Full record</a>
+        <a href="work.html">Work</a>
+        <a href="work.html#publications">Publications</a>
         <a href="speaking.html">Speaking</a>
-        <a href="index.html#collaboration">Collaborate</a>
+        <a href="index.html#collaboration">Contact</a>
       </nav>
       <button class="theme-toggle" type="button" aria-label="Switch to light theme">
         <span class="toggle-track" aria-hidden="true"><span></span></span>
@@ -108,13 +108,12 @@
     <main id="main" class="b-shell" tabindex="-1">
       <section class="b-hero" aria-labelledby="page-title">
         <div class="intro-panel">
-          <a class="back-link" href="index.html">← Back to overview</a>
           <p class="b-status">Current research · 2025&ndash;2028</p>
           <h1 id="page-title">From Data to Decisions</h1>
-          <p class="b-hero-note">Which chemical risks in food deserve attention first? I am building the data, methods and tools to answer that question for Latvia, and to show the uncertainty behind each answer.</p>
+          <p class="b-hero-note">Which chemical risks in food deserve attention first? I am building a transparent tool that ranks them across European countries and population groups, and shows where the evidence runs out. Latvia is the first test case.</p>
           <div class="hero-actions">
-            <a class="hero-action hero-action-primary" href="#pipeline">How it works</a>
-            <a class="hero-action" href="#timeline">Timeline</a>
+            <a class="hero-action hero-action-primary" href="#how">How it works</a>
+            <a class="hero-action" href="#status">Where it stands</a>
           </div>
         </div>
         <aside class="profile-card" aria-label="Project at a glance">
@@ -140,158 +139,140 @@
         </aside>
       </section>
 
-      <section id="pipeline" class="b-section" aria-labelledby="pipeline-heading">
+      <section id="how" class="b-section" aria-labelledby="how-heading">
         <div class="b-section-title">
           <span>01</span>
-          <h2 id="pipeline-heading">How it works</h2>
+          <h2 id="how-heading">How it works</h2>
         </div>
         <figure class="flow" aria-labelledby="flow-caption">
           <div class="flow-col">
             <p class="flow-step">Evidence in</p>
             <div class="flow-node">
-              <span class="flow-chip flow-done">WP1 · Complete</span>
-              <h3>Occurrence data</h3>
-              <p>Contaminant results from Latvian food monitoring and other sources.</p>
+              <span class="flow-chip flow-done">Built</span>
+              <h3>Monitoring data</h3>
+              <p>Contaminant and residue results reported to EFSA, plus BIOR's national results.</p>
+            </div>
+            <div class="flow-node">
+              <span class="flow-chip flow-done">Built</span>
+              <h3>Food consumption</h3>
+              <p>EFSA's consumption database, by country and population group.</p>
+            </div>
+            <div class="flow-node">
+              <span class="flow-chip flow-done">Built</span>
+              <h3>Toxicological values</h3>
+              <p>EFSA's values first, from OpenFoodTox and its opinions. Weaker sources are labelled.</p>
             </div>
             <div class="flow-node">
               <span class="flow-chip flow-progress">In development</span>
               <h3>Scientific literature</h3>
-              <p>Occurrence Router pulls results out of published tables and supplements.</p>
-            </div>
-            <div class="flow-node">
-              <span class="flow-chip flow-progress">WP2 · In progress</span>
-              <h3>Health-based guidance values</h3>
-              <p>ADIs, TDIs and other reference values. Missing values are recorded as gaps.</p>
-            </div>
-            <div class="flow-node">
-              <span class="flow-chip flow-progress">WP3 · In progress</span>
-              <h3>Food consumption</h3>
-              <p>What people eat, how often and how much.</p>
+              <p>Occurrence Router, a separate tool, pulls occurrence data out of published papers.</p>
             </div>
           </div>
           <div class="flow-arrow" aria-hidden="true"></div>
           <div class="flow-col">
-            <p class="flow-step">Integrate</p>
+            <p class="flow-step">Harmonise</p>
             <div class="flow-node">
-              <span class="flow-chip flow-done">Version 1</span>
-              <h3>Harmonised database</h3>
-              <p>Comparable across foods, substances, units and quality descriptors.</p>
+              <span class="flow-chip flow-done">Built</span>
+              <h3>Harmonised occurrence</h3>
+              <p>One unit system. Censored results set from the limit they were reported against. Implausible values flagged, never dropped.</p>
             </div>
             <div class="flow-node">
-              <span class="flow-chip flow-progress">In preparation</span>
-              <h3>Exposure models</h3>
-              <p>Concentrations and consumption set against reference values.</p>
+              <span class="flow-chip flow-done">Built</span>
+              <h3>Dietary exposure</h3>
+              <p>Summed over the whole diet, per substance and population group.</p>
             </div>
           </div>
           <div class="flow-arrow" aria-hidden="true"></div>
           <div class="flow-col">
-            <p class="flow-step">Prioritise</p>
+            <p class="flow-step">Rank</p>
             <div class="flow-node flow-node-key">
-              <span class="flow-chip flow-done">Rebuilt 2026</span>
-              <h3>Risk Thermometer</h3>
-              <p>Ranks substances and food groups on one comparative scale. The rebuilt tool reproduces the original results.</p>
+              <span class="flow-chip flow-done">Built</span>
+              <h3>Concern ranking</h3>
+              <p>Exposure set against health-based values or margins of exposure on one scale, with a censoring band.</p>
+            </div>
+            <div class="flow-node">
+              <span class="flow-chip flow-done">Built</span>
+              <h3>Gap map</h3>
+              <p>Every missing value, food match or measurement is recorded and published with the ranking.</p>
             </div>
           </div>
           <div class="flow-arrow" aria-hidden="true"></div>
           <div class="flow-col">
-            <p class="flow-step">Decide</p>
+            <p class="flow-step">Use</p>
+            <div class="flow-node">
+              <span class="flow-chip flow-done">Built</span>
+              <h3>Interactive tool</h3>
+              <p>Headline priorities for risk managers, every switch for assessors, plain explanations for everyone else.</p>
+            </div>
             <div class="flow-node">
               <span class="flow-chip flow-planned">Planned</span>
-              <h3>Decision-support tool</h3>
-              <p>Transparent priorities for risk assessors, laboratories and competent authorities.</p>
+              <h3>Public dashboard</h3>
+              <p>Method, gap map and coverage first. Results for named substances after the EFSA check.</p>
             </div>
           </div>
-          <figcaption id="flow-caption">Status at the end of June 2026, from the project progress reports for <a href="https://bior.lv/en/project-news/project-no-1-1-1-9-lzp-1-24-124-updates-from-02-07-2025-to-02-01-2026/">July to December 2025</a> and <a href="https://bior.lv/en/project-news/updates-on-project-no-1-1-1-9-lzp-1-24-124-for-the-period-from-2-january-2026-to-30-june-2026/">January to June 2026</a>.</figcaption>
+          <figcaption id="flow-caption">Status at the end of October 2026.</figcaption>
         </figure>
       </section>
 
       <section id="questions" class="b-section" aria-labelledby="questions-heading">
         <div class="b-section-title">
           <span>02</span>
-          <h2 id="questions-heading">The hard questions</h2>
+          <h2 id="questions-heading">Key questions</h2>
         </div>
         <div class="profile-grid">
           <article>
             <p class="section-eyebrow">Comparability</p>
             <h3>Can results from different sources be compared?</h3>
-            <p>Only once foods, substances, units and quality descriptors are harmonised. That was the first work package.</p>
+            <p>Only after units, foods and substances are harmonised. Results below the limit are run at zero, half and the full limit, so every rank carries a band.</p>
           </article>
           <article>
             <p class="section-eyebrow">Gaps</p>
-            <h3>What if a contaminant has no guidance value?</h3>
-            <p>The gap is recorded. Benchmark-dose modelling on existing data is one route. What predictive toxicology can support is still being tested.</p>
+            <h3>What if a substance has no toxicological value?</h3>
+            <p>It is counted and mapped as a gap, and the gap map is published with the ranking. EFSA's values come first. Anything weaker is labelled.</p>
           </article>
           <article>
             <p class="section-eyebrow">Exposure</p>
             <h3>Does presence in food mean risk?</h3>
-            <p>No. Risk depends on who eats the food, how often and how much, and how concentrations compare with reference points.</p>
+            <p>No. Exposure adds up what each population group eats. A food eaten but never measured is a monitoring gap, not a safe food.</p>
           </article>
           <article>
-            <p class="section-eyebrow">Use</p>
-            <h3>Will decision-makers use the output?</h3>
-            <p>Only if it is transparent and easy to read. The tool will be tested with risk assessors, laboratories and authorities.</p>
+            <p class="section-eyebrow">Trust</p>
+            <h3>Why trust the ranking?</h3>
+            <p>Every method choice is a switch with a documented default, explained where the number appears. Named results wait for a check against EFSA's published exposure estimates.</p>
           </article>
         </div>
       </section>
 
-      <section id="timeline" class="b-section" aria-labelledby="timeline-heading">
+      <section id="status" class="b-section" aria-labelledby="status-heading">
         <div class="b-section-title">
           <span>03</span>
-          <h2 id="timeline-heading">Timeline</h2>
-        </div>
-        <div class="timeline" data-tl-start="2025-07-01" data-tl-end="2028-06-30">
-          <div class="tl-track" aria-hidden="true">
-            <span class="tl-fill"></span>
-            <span class="tl-now"><span>Now</span></span>
-          </div>
-          <ol class="tl-grid">
-            <li class="tl-period" data-from="2025-07-01" data-to="2025-12-31">
-              <p class="tl-when">Jul&ndash;Dec 2025</p>
-              <ul>
-                <li><strong>Project starts, 1 July</strong></li>
-                <li>Contaminant list v1, built from EFSA sources (Aug)</li>
-                <li>Database schema, data dictionary and quality rules</li>
-                <li>COST seminar &ldquo;Animals as Bioindicators&rdquo;, Kraków (Sep)</li>
-                <li>EFSA benchmark-dose modelling training, Brussels (Nov)</li>
-              </ul>
-            </li>
-            <li class="tl-period" data-from="2026-01-01" data-to="2026-06-30">
-              <p class="tl-when">Jan&ndash;Jun 2026</p>
-              <ul>
-                <li><strong>Work package 1 complete</strong></li>
-                <li>Guidance values and consumption data under way</li>
-                <li>BeSafeBeeHoney Conference, Tirana (May)</li>
-                <li>Research stay in Maribor: Risk Thermometer rebuilt (May&ndash;Jun)</li>
-                <li>CHANGE workshop on new approach methodologies, Oslo (Jun)</li>
-              </ul>
-            </li>
-            <li class="tl-period tl-current" data-from="2026-07-01" data-to="2026-12-31">
-              <p class="tl-when">Jul&ndash;Dec 2026</p>
-              <ul>
-                <li><strong>Exposure models in preparation</strong></li>
-                <li>Science Bubble in Mērsrags (Aug) and Researchers' Night (Sep)</li>
-                <li>Agrifood-OneAI COST Action starts (Sep)</li>
-                <li>Occurrence Router and Risk Thermometer development continue</li>
-              </ul>
-            </li>
-            <li class="tl-period tl-planned" data-from="2027-01-01" data-to="2028-06-30">
-              <p class="tl-when">Jan 2027&ndash;Jun 2028</p>
-              <ul>
-                <li><strong>Decision-support tool</strong></li>
-                <li>Development, validation and testing with risk assessors, laboratories and authorities</li>
-                <li>Project ends 30 June 2028</li>
-              </ul>
-            </li>
-          </ol>
-        </div>
-      </section>
-
-      <section id="pipeline-outputs" class="b-section" aria-labelledby="outputs-heading">
-        <div class="b-section-title">
-          <span>04</span>
-          <h2 id="outputs-heading">In the pipeline</h2>
+          <h2 id="status-heading">Where it stands</h2>
         </div>
         <ol class="output-list">
+          <li>
+            <span class="output-year">Engine</span>
+            <div class="output-main">
+              <strong>From raw monitoring data to a ranked table</strong>
+              <span class="output-venue">Harmonisation, exposure and ranking run end to end on real data, with provenance for every run.</span>
+            </div>
+            <span class="output-label">Built</span>
+          </li>
+          <li>
+            <span class="output-year">Tool</span>
+            <div class="output-main">
+              <strong>Interactive risk-ranking tool</strong>
+              <span class="output-venue">Any country, population group and method on demand, each choice explained in place.</span>
+            </div>
+            <span class="output-label">Built</span>
+          </li>
+          <li>
+            <span class="output-year">Check</span>
+            <div class="output-main">
+              <strong>Test against EFSA's published exposure estimates</strong>
+              <span class="output-venue">The gate for any named result on a public page.</span>
+            </div>
+            <span class="output-label">In progress</span>
+          </li>
           <li>
             <span class="output-year">Review</span>
             <div class="output-main">
@@ -301,35 +282,27 @@
             <span class="output-label">In preparation</span>
           </li>
           <li>
-            <span class="output-year">Review</span>
-            <div class="output-main">
-              <strong>Persistent and emerging environmental contaminants in edible bee products</strong>
-              <span class="output-venue">COST BeSafeBeeHoney Working Group 2 · 161 studies from 61 countries</span>
-            </div>
-            <span class="output-label">Under review</span>
-          </li>
-          <li>
             <span class="output-year">Tool</span>
             <div class="output-main">
               <strong>Occurrence Router</strong>
-              <span class="output-venue">Structured extraction of contaminant occurrence data from scientific literature</span>
+              <span class="output-venue">Structured extraction of occurrence data from scientific literature</span>
             </div>
             <span class="output-label">In development</span>
           </li>
           <li>
-            <span class="output-year">Tool</span>
+            <span class="output-year">Release</span>
             <div class="output-main">
-              <strong>Risk Thermometer, rebuilt</strong>
-              <span class="output-venue">Adaptation for the project, with closer cooperation with Swedish colleagues as the next step</span>
+              <strong>Public dashboard, open-source release and a paper on the tool</strong>
+              <span class="output-venue">After the EFSA check and testing with users</span>
             </div>
-            <span class="output-label">In development</span>
+            <span class="output-label">Planned</span>
           </li>
         </ol>
       </section>
 
       <section id="related" class="b-section" aria-labelledby="related-heading">
         <div class="b-section-title">
-          <span>05</span>
+          <span>04</span>
           <h2 id="related-heading">Related research</h2>
         </div>
         <div class="profile-grid pair-grid">
@@ -342,20 +315,20 @@
           <article>
             <p class="section-eyebrow">Evidence synthesis · 2023&ndash;present</p>
             <h3>Contaminants in bee products</h3>
-            <p>More than 27,000 harmonised occurrence records across honey, pollen, bee bread, royal jelly and propolis.</p>
+            <p>161 studies from 61 countries and more than 27,000 harmonised occurrence records across honey, pollen, bee bread, royal jelly and propolis. Manuscript under review.</p>
             <a href="https://www.cost.eu/actions/CA22105/">BeSafeBeeHoney · COST CA22105</a>
           </article>
         </div>
         <div class="hero-actions section-actions">
           <a class="hero-action hero-action-primary" href="index.html#collaboration">Discuss collaboration</a>
-          <a class="hero-action" href="work.html">Full record</a>
+          <a class="hero-action" href="work.html">Body of work</a>
         </div>
       </section>
 
       <footer class="site-footer">
         <div class="contact-row">
           <a href="index.html">Home</a>
-          <a href="work.html">Full record</a>
+          <a href="work.html">Work</a>
           <a href="speaking.html">Speaking &amp; teaching</a>
           <a href="https://www.linkedin.com/in/janisrusko/">LinkedIn</a>
           <a href="https://orcid.org/0000-0002-9027-8895">ORCID</a>
