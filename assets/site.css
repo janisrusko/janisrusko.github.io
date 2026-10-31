@@ -963,8 +963,19 @@ main.b-shell {
   opacity: 0.7;
 }
 
+.map-arc-meet {
+  stroke: var(--b-muted);
+  opacity: 0.55;
+}
+
 .map-pin {
   stroke-width: 2.5;
+}
+
+.map-pin-meet {
+  fill: var(--b-muted);
+  stroke: var(--b-bg);
+  stroke-width: 2;
 }
 
 .map-pin-talk {
@@ -1031,6 +1042,11 @@ main.b-shell {
   font-weight: 700;
 }
 
+.map-label-meet {
+  fill: var(--b-muted);
+  font-size: 15px;
+}
+
 @keyframes map-flow {
   to {
     stroke-dashoffset: -16;
@@ -1066,7 +1082,8 @@ main.b-shell {
     stroke-width: 8px;
   }
 
-  .reach-map-main .map-year {
+  .reach-map-main .map-year,
+  .reach-map-main .map-label-meet {
     display: none;
   }
 
