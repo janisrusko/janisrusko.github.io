@@ -76,9 +76,9 @@ const H = Math.round(yMax - yMin);
 
 const main = dots(proj, 5, 5, W - 5, H - 5, 10, id => ON.has(id));
 // [name, year label, type, [lon, lat], label position, options]
-// options.from: the hub a line starts at (default Riga); options.often: many visits
+// options.from: the hub or hubs lines start at (default Riga); options.often: many visits
 const places = [
-  ['Utrecht', '', 'talk', [5.12, 52.09], 'ur', { from: 'naples' }],
+  ['Utrecht', '', 'talk', [5.12, 52.09], 'ur', { from: ['riga', 'naples'] }],
   ['Brussels', '', 'talk', [4.35, 50.85], 'dl', { often: true }],
   ['Tartu', '', 'talk', [26.72, 58.38], 'r'],
   ['Larissa', '', 'talk', [22.42, 39.64], 'r'],
@@ -90,10 +90,10 @@ const places = [
   ['Brescia', '', 'teach', [10.21, 45.54], 'l'],
   ['Naples', '', 'stay', [14.27, 40.85], 'l', { hub: true }],
   ['Maribor', '', 'stay', [15.65, 46.55], 'ur'],
-  ['Parma', '', 'meet', [10.33, 44.80], 'dl', { from: 'naples' }],
-  ['Berlin', '', 'meet', [13.40, 52.52], 'uR', { from: 'naples' }],
-  ['Vienna', '', 'meet', [16.37, 48.21], 'ur', { from: 'naples' }],
-  ['Athens', '', 'meet', [23.73, 37.98], 'r', { from: 'naples' }],
+  ['Parma', '', 'meet', [10.33, 44.80], 'dl', { from: ['riga', 'naples'] }],
+  ['Berlin', '', 'meet', [13.40, 52.52], 'uR', { from: ['riga', 'naples'] }],
+  ['Vienna', '', 'meet', [16.37, 48.21], 'ur', { from: ['riga', 'naples'] }],
+  ['Athens', '', 'meet', [23.73, 37.98], 'r', { from: ['riga', 'naples'] }],
   ['Copenhagen', '', 'meet', [12.57, 55.68], 'l'],
   ['Valencia', '', 'meet', [-0.38, 39.47], 'r'],
   ['Lisbon', '', 'meet', [-9.14, 38.72], 'r'],
@@ -111,16 +111,18 @@ const hubs = { riga, naples: proj([14.27, 40.85]) };
 let arcs = '', pins = '', rings = '', labels = '';
 for (const [n, yr, t, ll, pos, opts = {}] of places) {
   const [x, y] = proj(ll);
-  const from = opts.from || 'riga';
-  const lineClass = from === 'naples' ? 'map-arc map-arc-eufora' : `map-arc map-arc-${t}`;
-  arcs += `<path class="${lineClass}" d="${arc(hubs[from], [x, y])}"/>`;
+  const froms = [].concat(opts.from || 'riga');
+  for (const from of froms) {
+    const lineClass = from === 'naples' ? 'map-arc map-arc-eufora' : `map-arc map-arc-${t}`;
+    arcs += `<path class="${lineClass}" d="${arc(hubs[from], [x, y])}"/>`;
+  }
   pins += pin(t, x, y);
   if (opts.often) rings += `<circle class="map-often" cx="${f1(x)}" cy="${f1(y)}" r="13"/>`;
   const cls = opts.hub ? ' map-label-hub' : (t === 'meet' ? ' map-label-meet' : '');
   labels += label(n, yr, x, y, pos, cls);
 }
 const byType = t => places.filter(p => p[2] === t).map(p => p[0]).join(', ');
-const mainTitle = `Map of Europe with lines from Riga, and from Naples during the EU-FORA fellowship to ${places.filter(p => (p[5] || {}).from === 'naples').map(p => p[0]).join(', ')}. Talks: ${byType('talk')}. Teaching: ${byType('teach')}. Research stays: ${byType('stay')}. Meetings and training: ${byType('meet')}.`;
+const mainTitle = `Map of Europe with lines from Riga, and from Naples during the EU-FORA fellowship to ${places.filter(p => [].concat((p[5] || {}).from || []).includes('naples')).map(p => p[0]).join(', ')}. Talks: ${byType('talk')}. Teaching: ${byType('teach')}. Research stays: ${byType('stay')}. Meetings and training: ${byType('meet')}.`;
 const mainSvg = `<svg class="reach-map-main" viewBox="0 0 ${W} ${H}" role="img" aria-labelledby="reach-map-title" xmlns="http://www.w3.org/2000/svg">
 <title id="reach-map-title">${mainTitle}</title>
 <path class="map-dot" d="${pathOf(main.off)}"/>
