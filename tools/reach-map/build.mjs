@@ -97,6 +97,7 @@ const places = [
   ['Vienna', '', 'meet', [16.37, 48.21], 'ur'],
   ['Lausanne', '', 'meet', [6.63, 46.52], 'l'],
   ['Finland', '', 'meet', [24.94, 60.17], 'r'],
+  ['Kraków', '', 'meet', [19.94, 50.06], 'r'],
 ];
 const riga = proj([24.11, 56.95]);
 let arcs = '', pins = '', labels = '';
