@@ -732,6 +732,14 @@ main.b-shell {
   text-underline-offset: 0.18em;
 }
 
+.section-intro a {
+  text-underline-offset: 0.18em;
+}
+
+.section-intro a:hover {
+  color: var(--b-accent);
+}
+
 .publication-links a:hover {
   color: var(--b-accent);
 }
