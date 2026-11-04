@@ -557,6 +557,19 @@ main.b-shell {
   width: fit-content;
 }
 
+.selected-work-main .work-game {
+  margin-top: 0.85rem;
+}
+
+.selected-work-main video {
+  display: block;
+  width: 100%;
+  max-width: 54rem;
+  height: auto;
+  border: 1px solid var(--b-line);
+  background: #0d2233;
+}
+
 .selected-outputs {
   margin-top: clamp(1.55rem, 4vw, 2.45rem);
 }
