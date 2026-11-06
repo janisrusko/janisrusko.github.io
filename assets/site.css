@@ -370,6 +370,61 @@ main.b-shell {
   color: var(--b-accent);
 }
 
+.profile-photo {
+  display: block;
+  width: 9rem;
+  height: 9rem;
+  object-fit: cover;
+  border: 1px solid var(--b-line);
+}
+
+.profile-figure,
+.card-photo,
+.work-photo {
+  margin: 0;
+}
+
+.profile-figure img,
+.card-photo img,
+.work-photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--b-line);
+}
+
+.profile-figure figcaption,
+.card-photo figcaption,
+.work-photo figcaption {
+  margin-top: 0.4rem;
+  color: var(--b-muted);
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.72rem;
+  line-height: 1.4;
+}
+
+.card-photo {
+  margin-bottom: 0.75rem;
+}
+
+.work-media {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: start;
+  gap: 0.75rem;
+  max-width: 54rem;
+}
+
+.selected-work-main .work-media video {
+  max-width: none;
+}
+
+@media (max-width: 640px) {
+  .work-media {
+    grid-template-columns: 1fr;
+  }
+}
+
 .profile-grid p {
   color: var(--b-muted);
   line-height: 1.55;
