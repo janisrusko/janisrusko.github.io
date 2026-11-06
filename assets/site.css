@@ -564,7 +564,7 @@ main.b-shell {
 .selected-work-main video {
   display: block;
   width: 100%;
-  max-width: 54rem;
+  max-width: 36rem;
   height: auto;
   border: 1px solid var(--b-line);
   background: #0d2233;
