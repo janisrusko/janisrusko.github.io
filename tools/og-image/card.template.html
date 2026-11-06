@@ -1,0 +1,41 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+@font-face{font-family:"JB Mono";src:url("fonts/jetbrains-mono-latin-ext-500-normal.woff2") format("woff2");font-weight:500;unicode-range:U+0100-02AF,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;}
+@font-face{font-family:"JB Mono";src:url("fonts/jetbrains-mono-latin-500-normal.woff2") format("woff2");font-weight:500;}
+html,body{margin:0;padding:0}
+.card{position:relative;width:1200px;height:630px;overflow:hidden;background:#0f1413;color:#e0e8e2;font-family:"Inter","Inter Display",sans-serif}
+.map{position:absolute;left:480px;top:22px;width:840px}
+.map svg{display:block;width:100%;height:auto}
+.fade{position:absolute;left:460px;top:0;width:250px;height:630px;background:linear-gradient(to right,#0f1413 0%,rgba(15,20,19,0.85) 35%,rgba(15,20,19,0) 100%)}
+.map-dot{fill:none;stroke:rgba(170,183,175,0.32);stroke-width:4.2;stroke-linecap:round}
+.map-dot-on{stroke:rgba(130,183,167,0.88)}
+.map-arc{fill:none;stroke-width:1.6;stroke-linecap:round;stroke-dasharray:2 6;vector-effect:non-scaling-stroke}
+.map-arc-talk{stroke:#d3b36f}
+.map-arc-teach{stroke:#82b7a7}
+.map-arc-stay{stroke:#c7d4cc;opacity:.75}
+.map-arc-meet{stroke:#aab7af;opacity:.5}
+.map-arc.map-arc-eufora{stroke:#c7d4cc;stroke-dasharray:6 2;opacity:.7}
+.map-pin{stroke-width:2.5}
+.map-pin-talk{fill:#d3b36f;stroke:#0f1413}
+.map-pin-teach{fill:#0f1413;stroke:#82b7a7;stroke-width:3.5}
+.map-pin-stay{fill:#c7d4cc;stroke:#0f1413}
+.map-pin-meet{fill:#aab7af;stroke:#0f1413;stroke-width:2}
+.map-often{fill:none;stroke:#d3b36f;stroke-width:1.5;vector-effect:non-scaling-stroke;opacity:.85}
+.map-hub{fill:#e0e8e2;stroke:#0f1413;stroke-width:2.5}
+.map-hub-ring{fill:none;stroke:#e0e8e2;stroke-width:1.5;vector-effect:non-scaling-stroke;transform-box:fill-box;transform-origin:center;transform:scale(1.9);opacity:.45}
+.map-label{display:none}
+.text{position:absolute;left:140px;top:0;height:630px;width:600px;display:flex;flex-direction:column;justify-content:center}
+.kicker{font-family:"JB Mono",monospace;font-weight:500;font-size:19px;letter-spacing:.09em;text-transform:uppercase;color:#82b7a7;margin:0 0 26px}
+.name{font-family:"Inter Display","Inter",sans-serif;font-weight:700;font-size:98px;line-height:.98;letter-spacing:-.025em;margin:0;color:#eef3ef}
+.tag{font-size:31px;line-height:1.3;color:#aab7af;margin:30px 0 0;max-width:470px;font-weight:400}
+.rule{width:64px;height:3px;background:#d3b36f;margin:34px 0 0}
+.url{position:absolute;left:140px;bottom:52px;font-family:"JB Mono",monospace;font-weight:500;font-size:19px;letter-spacing:.04em;color:#c7d4cc}
+</style></head><body><div class="card">
+<div class="map"><!-- MAP: paste map-main.svg from ../reach-map here --></div>
+<div class="fade"></div>
+<div class="text">
+<p class="kicker">Chemical risk assessment · BIOR</p>
+<h1 class="name">Jānis<br>Ruško</h1>
+<p class="tag">Evidence to decision in chemical food safety</p>
+</div>
+<div class="url">janisrusko.github.io</div>
+</div></body></html>
