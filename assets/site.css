@@ -374,9 +374,19 @@ main.b-shell {
 .hero-row {
   display: grid;
   grid-template-columns: minmax(0, 1fr) auto;
+  grid-template-areas: "copy photo";
   align-items: start;
   gap: clamp(1.25rem, 3vw, 2.25rem);
   margin-top: 1.2rem;
+}
+
+.hero-copy {
+  grid-area: copy;
+}
+
+.hero-portrait,
+.hero-figure {
+  grid-area: photo;
 }
 
 .hero-row .b-hero-note {
@@ -394,6 +404,13 @@ main.b-shell {
 
 .hero-figure {
   width: clamp(12rem, 22vw, 15.5rem);
+}
+
+/* The Jelgava photo loses the empty panel above the speaker, not his hands or the organiser's logo */
+.hero-figure img {
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  object-position: 50% 100%;
 }
 
 .section-head-media {
@@ -456,18 +473,29 @@ main.b-shell {
 }
 
 @media (max-width: 640px) {
-  .work-media,
-  .hero-row {
+  .work-media {
     grid-template-columns: minmax(0, 1fr);
   }
 
+  /* On phones the portrait floats beside the intro text instead of sitting alone */
+  .hero-row {
+    display: flow-root;
+  }
+
   .hero-portrait {
-    order: -1;
-    width: 7rem;
+    float: right;
+    width: clamp(6rem, 28vw, 8rem);
+    margin: 0.2rem 0 0.75rem 1rem;
+  }
+
+  .hero-row .hero-actions {
+    clear: both;
   }
 
   .hero-figure {
     width: 100%;
+    max-width: 26rem;
+    margin-top: 1.4rem;
   }
 }
 
