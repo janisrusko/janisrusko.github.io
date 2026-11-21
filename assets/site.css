@@ -1395,3 +1395,332 @@ main.b-shell {
   }
 }
 
+/* In the media: cards with original line drawings that follow the theme */
+.press-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1px;
+  border: 1px solid var(--b-line);
+  background: var(--b-line);
+}
+
+.press-card {
+  position: relative;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  background: var(--b-panel);
+}
+
+.press-feature {
+  grid-column: 1 / -1;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr);
+  grid-template-rows: auto;
+}
+
+.press-art {
+  border-bottom: 1px solid var(--b-line);
+  overflow: hidden;
+}
+
+.press-feature .press-art {
+  border-right: 1px solid var(--b-line);
+  border-bottom: 0;
+}
+
+.press-svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: transform 320ms ease;
+}
+
+.press-card:hover .press-svg {
+  transform: scale(1.025);
+}
+
+.press-body {
+  display: grid;
+  align-content: start;
+  gap: 0.55rem;
+  padding: 0.95rem;
+}
+
+.press-feature .press-body {
+  align-content: center;
+  gap: 0.75rem;
+  padding: clamp(1rem, 3vw, 2rem);
+}
+
+.press-meta,
+.press-kind {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.76rem;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+.press-meta {
+  color: var(--b-accent);
+}
+
+.press-kind {
+  color: var(--b-muted);
+}
+
+.press-body h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.press-feature h3 {
+  font-size: clamp(1.35rem, 2.6vw, 1.95rem);
+  line-height: 1.15;
+}
+
+.press-body h3 a {
+  color: var(--b-text);
+  text-decoration: none;
+}
+
+/* The headline link covers the whole card; the extra link sits above it */
+.press-body h3 a::after {
+  position: absolute;
+  inset: 0;
+  content: "";
+}
+
+.press-card:hover h3 a {
+  color: var(--b-accent);
+}
+
+.press-card:focus-within {
+  outline: 3px solid var(--b-accent);
+  outline-offset: -3px;
+}
+
+.press-card h3 a:focus-visible {
+  outline: 0;
+}
+
+.press-body p {
+  max-width: 34rem;
+  color: var(--b-muted);
+  line-height: 1.55;
+}
+
+.press-body .press-meta {
+  color: var(--b-accent);
+}
+
+.press-more {
+  position: relative;
+  z-index: 1;
+  width: fit-content;
+  color: var(--b-text);
+  text-decoration-color: color-mix(in srgb, var(--b-accent) 42%, transparent);
+  text-underline-offset: 0.18em;
+}
+
+.press-more:hover {
+  color: var(--b-accent);
+}
+
+.pa-bg {
+  fill: var(--b-panel);
+}
+
+.pa-grid {
+  fill: none;
+  stroke: var(--b-line);
+  stroke-width: 1;
+  opacity: 0.7;
+}
+
+.pa-axis,
+.pa-shelf {
+  fill: none;
+  stroke: var(--b-muted);
+  stroke-width: 2;
+  stroke-linecap: round;
+  opacity: 0.6;
+}
+
+.pa-shelf {
+  stroke-width: 3;
+}
+
+.pa-peak {
+  fill: none;
+  stroke: var(--b-muted);
+  stroke-width: 2;
+  opacity: 0.5;
+}
+
+.pa-dash {
+  stroke-dasharray: 3 4;
+}
+
+.pa-peak-id {
+  fill: none;
+  stroke: var(--b-accent);
+  stroke-width: 2.5;
+}
+
+.pa-dot-id {
+  fill: var(--b-accent);
+}
+
+.pa-ghost,
+.pa-ghost-ring {
+  fill: none;
+  stroke: var(--b-warm);
+  stroke-width: 3;
+}
+
+.pa-ghost-ring {
+  stroke-dasharray: 7 5;
+  stroke-linejoin: round;
+}
+
+.pa-ghost-q {
+  fill: var(--b-warm);
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 24px;
+  font-weight: 700;
+  text-anchor: middle;
+}
+
+.pa-label {
+  fill: var(--b-muted);
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 16px;
+}
+
+.pa-label-lg {
+  font-size: 22px;
+}
+
+.pa-fill-muted {
+  fill: var(--b-muted);
+  opacity: 0.45;
+}
+
+.pa-fill-warm {
+  fill: var(--b-warm);
+}
+
+.pa-lens {
+  fill: none;
+  stroke: var(--b-accent);
+  stroke-width: 4;
+}
+
+.pa-lens-handle {
+  fill: none;
+  stroke: var(--b-accent);
+  stroke-width: 8;
+  stroke-linecap: round;
+}
+
+.pa-pulse {
+  fill: none;
+  stroke: var(--b-warm);
+  stroke-width: 1.5;
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: map-pulse 2.4s ease-out infinite;
+}
+
+.pa-wave,
+.pa-wave-echo {
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.pa-wave {
+  stroke: var(--b-accent);
+  stroke-width: 3;
+}
+
+.pa-wave-echo {
+  stroke: var(--b-muted);
+  stroke-width: 2;
+  opacity: 0.45;
+}
+
+.pa-item {
+  fill: none;
+  stroke: var(--b-soft);
+  stroke-width: 2.5;
+  stroke-linejoin: round;
+  opacity: 0.5;
+}
+
+.pa-tag,
+.pa-tag-string {
+  stroke: var(--b-accent);
+  stroke-width: 2.5;
+  stroke-linejoin: round;
+}
+
+.pa-tag {
+  fill: var(--b-panel);
+}
+
+.pa-tag-string {
+  fill: none;
+}
+
+.pa-tag-hole {
+  fill: none;
+  stroke: var(--b-accent);
+  stroke-width: 2;
+}
+
+.pa-check {
+  fill: none;
+  stroke: var(--b-accent);
+  stroke-width: 4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* Beside the text, the feature drawing fills the card's full height */
+@media (min-width: 821px) {
+  .press-feature .press-art {
+    display: grid;
+  }
+
+  .press-feature .press-svg {
+    height: 100%;
+  }
+}
+
+@media (max-width: 820px) {
+  .press-grid,
+  .press-feature {
+    grid-template-columns: 1fr;
+  }
+
+  .press-feature .press-art {
+    border-right: 0;
+    border-bottom: 1px solid var(--b-line);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .press-svg {
+    transition: none;
+  }
+
+  .press-card:hover .press-svg {
+    transform: none;
+  }
+
+  .pa-pulse {
+    animation: none;
+  }
+}
+
